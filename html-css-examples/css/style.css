@@ -114,6 +114,10 @@ nav ul li {
     padding: 5px;
 }
 
+nav ul li.master {
+        background-color: rgb(150,60,65);
+}
+
 nav ul li:hover {
        background-color: rgb(200,120,0); 
 
