@@ -1,0 +1,163 @@
+/*
+Stylesheet for a small set of HTML and CSS examples.
+Nothing fancy.
+Version a 01, 190213
+© 2019, Enno Hyttrek
+*/
+
+
+@import url("../fonts/sourcesanspro/stylesheet.css"); 
+
+/*Reset box sizing and block element spacing*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}  
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+body {
+    font-family: 'Source Sans Pro Light', Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6,
+th {
+  font-family: 'Source Sans Pro Semibold', Arial, sans-serif;  
+}
+
+a {
+    color: #000;
+}
+
+
+iframe {
+    width: 100%;
+    border: none;
+
+}
+
+#site-title {
+    clear: both;
+}
+
+#my-nav {
+    background-color: rgb(230,230,230);   
+    background-image: url(../img/code-1280.jpg);
+    background-size: cover; 
+    background-position: left center;
+}
+
+
+#my-footer {
+    
+}
+
+#site-title,
+.my-content {
+    padding: 20px;
+}
+
+h2 {
+    padding-bottom: 0.7em;
+}
+
+.my-content p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    padding-bottom: 1.1em;
+ width: 45%;   
+}
+
+
+.my-content p {
+    color: rgb(100,100,120);
+}
+
+
+.my-content h2 {
+    color: rgb(80,130,150);
+}
+
+#site-title {
+    color: rgba(255,255,255,0.9);
+}
+
+
+x
+
+/*
+navigation
+*/
+nav {
+    font-family: Arial, sans-serif;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+nav ul {
+    margin-left: 20px;
+    list-style:none;
+}
+
+nav ul li {
+    float: left;
+    background-color: rgb(50,60,65);
+    margin-right: 2px;    
+    padding: 5px;
+}
+
+nav ul li:hover {
+       background-color: rgb(200,120,0); 
+
+}
+
+nav ul li a,
+nav ul li a:hover {
+ color: #fff;   
+    text-decoration: none;
+}
+
+
+
+/*
+aside and footer
+*/
+
+
+aside,footer {
+    padding: 10px 0 0 20px;
+}
+
+.reference hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #fff, #333, #fff);
+    margin: 10px 0;
+}
+
+.reference a {
+    color: rgb(255,128,0);
+    text-decoration: none;
+}
+
+.reference a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.copyright a {
+    color: #000;    
+}
+
+
+p.copyright {
+    font-size: 0.7em;
+}
