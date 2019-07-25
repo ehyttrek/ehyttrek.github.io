@@ -174,3 +174,36 @@ Typography
 /**
 Typography - Fonts       
 **/
+
+
+/*   
+Responsive       
+*/
+
+
+@media only screen and (min-width: 600px) {
+    
+            header {
+           background-color: rgb(255,128,0);
+       }
+    
+    .content-wrapper {
+        display: flex;
+    }
+    
+    .article-wrapper {
+        width: 70vw;
+    }
+    
+    
+    .aside {
+        width: 30vw;
+    }
+    
+    
+}
+
+
+
+
+
