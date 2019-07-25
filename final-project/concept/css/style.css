@@ -28,7 +28,22 @@ a {
 Color & Style      
 */ 
        
-        div,
+#news {
+    background-color: darkblue;
+}
+
+#about {
+    background-color: darkred;
+}
+
+#services {
+     background-color: darkgreen;
+}
+
+#contact {
+     background-color: darkgoldenrod;
+}
+
         header,
         footer {
            color: #fff;
@@ -36,6 +51,16 @@ Color & Style
            outline: 1px solid #000;
 
        }
+
+main {
+    color: rgb(255,255,255,0.7);
+}
+
+aside {
+    background-color: rgba(200,210,220,0.5);
+}
+
+
        
        
         .level2 {
@@ -110,7 +135,12 @@ Layout
 
 section {
     padding-top: 20vh;
-    height: 80vh;
+
+}
+
+article,
+aside {
+    height: 50vh;
 }
 
 /**
