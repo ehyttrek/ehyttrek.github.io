@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mobile menu without JavaScript</title>
+    
+    <style>
+        
+        #top-nav {
+height: 10vh;
+            position: fixed;
+            top: 0;
+            background-color: rgba(255,255,255,0.8);
+            width: 100%;
+        }
+        
+        section {
+            padding-top: 15vh;
+            height: 85vh;
+            background-color: lightgrey;            
+        }
+        
+        #bottom-nav {
+            margin-top: 15vh;
+            height: 85vh;
+        }
+    
+        #top-nav div {
+            background-color: red;
+            width: 4vw;
+            height: 4vw;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    
+    <nav id="top-nav"><a href="#bottom-nav"><div></div></a><p>Burger Menu</p></nav>
+    
+    <main>
+        <section id="section1">
+            <h2>Section 1</h2>
+        </section>
+        
+        <section id="section2">
+            <h2>Section 2</h2>            
+        </section>
+        
+        <section id="section3">
+            <h2>Section 3</h2>            
+        </section>
+    
+    </main>
+    
+    <nav id="bottom-nav">
+    <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>        
+    </ul>
+    
+    </nav>
+
+</body>
+</html>
