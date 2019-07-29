@@ -13,36 +13,28 @@
         
         .my-flex-box {
             display: flex;
+            flex-wrap: wrap;
+
         }
         
 
         
         .my-flex-box p {
-            width: 49.5%;
+            flex-basis: 100%;
             background-color: rgb(200,200,200);
-            margin-right: 0.5%;
+            margin: 0 0 5px 0;
+
         }
         
+
         
-        .my-flex-box p.last-child {
-            margin-right: 0;
-        } 
-        
-        
-        @media only screen and (min-width: 600px) {
+        @media only screen and (min-width: 800px) {
             
+            .my-flex-box p {
+            flex-basis: 33.33%;
+            background-color: rgb(250,200,200);
             
-                    .my-flex-box p {
-            width: 33%;
-            background-color: rgb(200,200,200);
-            margin-right: 0.5%;
         }
-        
-        
-        .my-flex-box p.last-child {
-            margin-right: 0;
-        } 
-            
             
         }
         
