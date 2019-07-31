@@ -1,0 +1,109 @@
+/*
+Main stylesheet for ehyttrek.github.io
+Author: Enno Hyttrek, enno.hyttrek@gmail.com
+*/
+
+
+/*
+Import external resources
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600,600i&display=swap');
+
+
+
+/*
+Reset
+*/
+
+* {
+    margin: 0;
+    padding 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+Layout
+*/
+
+
+
+h1,h2,h3,h4,h5,h6,
+p,
+ul {
+    padding: 0 3vw;
+}
+
+h2,h3,
+p {
+    padding-bottom: 1em;
+}
+
+header {
+    height: 20vw
+}
+
+main {
+    min-height: 70vh;
+}
+
+footer {
+    padding-top: 5vw;
+}
+
+
+
+/*
+Typography
+*/
+
+
+
+* {
+    font-family: 'Source Sans Pro', Arial, sans-serif;   
+}
+
+footer {
+    font-size: 0.8em;
+}
+
+
+
+/*
+Color & Style
+*/
+
+body {
+    background-color: rgb(60,70,80);    
+}
+
+header {
+    background-color: rgb(255,128,0);
+    color: #fff;
+}
+
+main {
+    background-color: #fff;
+}
+
+footer,
+footer a {
+    color: rgb(200,210,220);
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+/*
+Behaviour
+*/
+
+footer a:hover {
+    text-decoration: underline;
+}
+
