@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tables</title>
+    <title>Style Tables with CSS Pseudo Elements</title>
     
     <style>
         
@@ -20,6 +20,7 @@
         table a {
             color: black;
             text-decoration: none;
+
         }
     
         td,
@@ -50,6 +51,11 @@
         th {
             background-color: darkred; 
             color: white;
+                        white-space: nowrap;
+        }
+        
+        td:nth-child(odd) {
+            white-space: nowrap;
         }
         
         
@@ -77,39 +83,45 @@
         <th>Family Name</th>
         <th>First Name</th>
         <th>Occupation</th>
+            <th>Notes</th>
         </tr>
         
         <tr>
-        <td>Hyttrek</td>
-        <td>Claus Günther Enno</td>        
-        <td>Designer</td>        
+        <td>Doe</td>
+        <td>John</td>        
+        <td>average guy</td>
+        <td>USA</td>
         </tr>
         
         <tr>
-        <td>Xu</td>
-        <td>Pam</td>        
-        <td>TCM Expert</td>        
+        <td>Mustermann</td>
+        <td>Erika</td>        
+        <td>standard person</td> 
+        <td>Germany</td>             
         </tr>   
         
                
         <tr>
-        <td><a href="#">Hyttrek</a></td>
-        <td>Alina</td>        
-        <td>School Student</td>        
+        <td>Mustermann</td>
+        <td>Anna</td>        
+        <td>daughter</td>  
+        <td>most common female first name</td>             
         </tr> 
             
         
         <tr>
-        <td>Xu</td>
-        <td>Pam</td>        
-        <td>TCM Expert</td>        
+        <td>Doe-Mustermann</td>
+        <td>Vincent</td>        
+        <td>son</td>  
+        <td>fancy hipster first name, political correct family name</td>              
         </tr>   
         
                 
         <tr>
-        <td>Hyttrek</td>
-        <td>Alina</td>        
-        <td>School Student</td>        
+        <td>Doe-Mustermann</td>
+        <td>Dunno</td>        
+        <td>third kid</td>     
+        <td>statistically improbable</td>            
         </tr>         
     
     
