@@ -38,6 +38,10 @@ ul {
     padding: 0 3vw;
 }
 
+h2 {
+    padding-top: 1em;
+}
+
 h2,h3,
 p {
     padding-bottom: 1em;
@@ -83,11 +87,20 @@ body {
 
 header {
     background-color: rgb(255,128,0);
-    color: #fff;
+}
+
+header,
+header a {
+       color: rgba(255,255,255,0.9); 
 }
 
 main {
     background-color: #fff;
+    color: rgb(60,70,80);
+}
+
+main a {
+    color: rgb(255,128,0);
 }
 
 footer,
@@ -103,6 +116,12 @@ footer a:hover {
 Behaviour
 */
 
+
+header a:hover {
+       color: #fff; 
+}
+
+main a:hover,
 footer a:hover {
     text-decoration: underline;
 }
