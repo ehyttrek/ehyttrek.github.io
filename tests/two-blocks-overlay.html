@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two Block Elements Overlay ('Layers')</title>
+    
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+    
+    <style>
+    
+        body {
+            background: #fff;
+        }
+        
+        section {
+            position: relative;
+            background: rgb(220,230,240);
+            margin-top: 0;
+        }
+        
+        .layer-1,
+        .layer-2 {
+            height: 50vw;
+
+        }
+
+        
+        
+        .layer-1 {
+            
+        }
+        
+        .layer-2 {
+            position: absolute;
+            display: flex;
+              justify-content: center;
+            top: 0;
+            width: 100%;
+        }
+        
+        .background-container {
+            background: rgb(200,210,220);
+            height: 30vw;
+        }
+        
+        .content-box {
+             background: rgb(180,190,200);  
+            width: 20vw;
+            height: 20vw;
+            margin: 20vw 3vw 0 3vw;
+        }
+    
+    
+    </style>
+    
+<body>
+    
+    <section>
+    <div class="layer-1">
+        <div class="background-container">
+        </div>
+    </div>
+    
+    <div class="layer-2">
+        <div class="content-box">
+        </div>
+        
+        <div class="content-box">
+        </div>
+        
+        <div class="content-box">
+        </div>
+     
+    </div>
+    </section>
+
+</body>
+</html>
