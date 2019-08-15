@@ -1,0 +1,126 @@
+/* 
+Stylesheet for final project, MAT 21a, DCI Berlin
+Enno Hyttrek
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600&display=swap');
+
+/*
+Reset
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+
+/*
+Layout
+*/
+
+
+h1,h2,h3,h4,
+p,
+nav ul {
+    padding-left: 20px;
+    margin-bottom: 1em;
+}
+
+header {
+    padding: 0.5em 0;
+}
+
+footer {
+    padding-top: 2em;
+    padding-bottom: 0.3em;
+}
+
+div {
+    width: 300px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.article-first-words {
+    padding: 0 5px;
+}
+
+
+
+/*
+Navigation
+*/
+
+nav.main-navigation {
+text-transform: uppercase;
+}
+
+nav.main-navigation ul {
+text-align: center;
+}
+
+nav.main-navigation ul li {
+display: inline-block;
+}
+
+nav.main-navigation ul li a {
+padding: 2px 8px;    
+text-decoration: none;
+color: rgb(210,220,230); 
+background-color: rgb(60,70,80); 
+font-weight: 600;    
+}
+
+nav.main-navigation ul li a:hover {
+color: #fff; 
+background-color: rgb(255,128,0);      
+}
+
+
+/* 
+Colors and Style
+*/
+
+body {
+    background-color: rgb(210,220,230);
+}
+
+header {
+    background-color: rgb(150,170,190);   
+}
+
+footer {
+    background-color: rgb(60,70,80);
+    color: rgb(210,220,230);
+}
+
+div {
+    background-color: red;
+}
+
+.article-first-words {
+     background-color: rgb(255,128,0);
+    color: #fff;
+}
+
+/*
+Typography
+*/
+
+body {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+           }
+
+p {
+    line-height: 1.5em;
+}
+
+/*
+Responsive Design
+*/
