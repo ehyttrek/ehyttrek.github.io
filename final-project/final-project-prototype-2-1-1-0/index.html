@@ -6,7 +6,42 @@
        
        <style>
            
-       
+           body {
+               color: #fff;
+               background-color: red;
+               font-size: 1.5em;
+           }
+
+           #desktop-nav {
+               display: none;
+           }
+           
+           
+           
+/*------------------------
+Responsive Design           
+------------------------*/           
+           
+           @media only screen and (min-width: 600px) {
+               
+               
+            body {
+               background-color: green;
+                               font-size: 1em;
+           }
+               
+            #desktop-nav {
+               display: block;
+           }
+               
+          #mobile-nav {
+               display: none;
+           }               
+               
+               
+               
+           }
+           
        </style>
    </head>
     
@@ -14,11 +49,16 @@
     
         <header>
             <h1>Page Title</h1>
-            <nav id="mobile-nav"></nav>
-            <nav id="desktop-nav"></nav>
+            <!-- -->
+            <nav id="mobile-nav">I'm the mobile menu</nav>
+            <nav id="desktop-nav">I'm the desktop menu</nav>
         </header>
 
         <section>
+        
+        <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+        </p>
         
         </section>
         
