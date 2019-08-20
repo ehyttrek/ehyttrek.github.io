@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lists and Markers</title>
+    
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        ul li {
+            display: inline-block;
+            background-color: rgb(200,210,220);
+            margin-right: -3px;
+        }
+        
+       ul ul li {
+            background-color: rgb(100,210,220);           display: block; 
+            width: 100px;
+        }
+        
+        ul li:hover {
+
+              background-color: rgb(255,128,0);          
+        }        
+        
+        ul li a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            padding: 5px;
+        }
+        
+        ul li a:hover {
+            color: #fff;
+        }
+        
+        nav.main-nav {
+            margin: 8vw 0 0 1vw;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    
+    <nav id="main-nav" class="main-nav">
+        <ul>
+        <li><a href="#">Item 1</a></li>
+            <ul class="pull-down">
+            <li><a href="#">Subitem 1</a></li>
+            <li><a href="#">Subitem 1</a></li>
+            <li><a href="#">Subitem 1</a></li>    
+            </ul>
+        <li><a href="#">Item 2</a></li>    
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>        
+        </ul>
+    </nav>
+
+</body>
+</html>

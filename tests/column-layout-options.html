@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>Column Layouts Different Options</title>
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i&display=swap" rel="stylesheet"> 
+    
+    <style>
+        
+                * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+           body {
+           font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 300;       
+       }
+        
+        .examples {
+            padding: 5vw 2vw;
+            border-bottom: 1px solid rgb(190,200,210);
+        }
+        
+        h2,p {
+            margin-bottom: 1em;
+        }
+        
+        #col-wrapper-1 > p:nth-child(1),
+        #col-wrapper-1 > p:nth-child(2)  {
+            float: left;
+            width: 30vw;
+            margin-right: 2vw;
+        }
+        
+        .clearfix::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+    
+        
+        #col-wrapper-2,
+        #col-wrapper-3 {
+            columns: 3; /*toggle this value between 3 and 4*/
+            column-gap: 2vw;
+        }
+        
+        .square {
+            width: 10vw;
+            height: 10vw;
+            background-color: rgb(255,128,0);
+        }
+        
+        .square:nth-child(2) {
+            background-color: rgb(128,255,0);
+        }
+    
+        .square:nth-child(3) {
+            background-color: rgb(128,0,128);
+        }
+        
+        #col-wrapper-4 {
+            display: flex;
+        }
+        
+        #col-wrapper-4 > p {
+        width: 30vw;
+        }
+        
+        #col-wrapper-4 > p:nth-child(1),
+        #col-wrapper-4 > p:nth-child(2) {
+            margin-right: 2vw;
+        }
+
+    
+    </style>
+    
+
+</head>
+<body>
+    
+    <section class="examples clearfix" id="example-1">
+        <h2>'Old School': float</h2>
+        <div class="col-wrapper" id="col-wrapper-1">
+            <p>
+            In the old days, before CSS columns, flex and grid (but after the HTML tables and pixel-GIF scaling), horzontal layouts would be done by abusing the float property.
+            </p>
+            <p>
+            This property was originally designed to make text float around an image, but soon it was the standard solution to make those darn block elements behave differently.
+            </p>
+            <p>
+            By declaring 'float: left' for the elements that were supposed to appear horizontally, you could make them do exactly that. 
+            </p>
+        </div> <!-- #col-wrapper-1 -->
+    </section>
+    
+    <section class="examples" id="example-2">
+          <h2>'True Columns': columns</h2>
+        <div class="col-wrapper" id="col-wrapper-2">
+            <p>
+            With the column property you can actually create 'true columns', meaning: a continous block of content will flow into the specified amount of columns.
+            </p>
+            <p>
+            There are a number of ways to get the behaviour of the content in these columns under control, but some things are not easy to do.
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. 
+            </p>
+            <p>
+            For example it seems the automatic flow gets messed up, when the elemets withing -- here the paragraph -- have a vertical margin set.
+            </p>
+        </div> <!-- #col-wrapper-2 -->  
+    </section>
+    
+        <section class="examples" id="example-3">
+          <h2>Using the columns property on other content than text</h2>
+            <p>The column property can also be used on other content but text, for example CSS shapes as shown here. Be advised, though, that if the number of columns and number of items doesn't match, the items will be 'cut' and their parts distributed over the colums.</p>
+        <div class="col-wrapper" id="col-wrapper-3">
+            <div class="square"></div>
+            <div class="square"></div>          
+            <div class="square"></div>
+
+
+        </div> <!-- #col-wrapper-2 -->  
+    </section>
+    
+    
+    <section class="examples" id="example-4">
+          <h2>'Stay Flexible': flex</h2>
+        <div class="col-wrapper" id="col-wrapper-4">
+            <p>
+            Setting display to the value 'flex' is another way to create horizontal layouts
+            </p>
+            <p>
+            However, it doesn't let the content automatically flow into columns.
+            </p>
+            <p>
+            Flex in the default setting behaves very much like good old 'flow: left' -- except that you don't need a clearfix.
+            </p>
+        </div> <!-- #col-wrapper-2 -->  
+    </section>    
+
+</body>
+</html>
