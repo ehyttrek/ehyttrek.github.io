@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Grid Basics</title>
+    
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+    
+        .grid-container-1 > div {
+            background-color: rgb(150,160,170);
+            height: 50vw;
+        }
+        
+        .grid-container-1 > div:nth-child(1) {
+           grid-column-start: 1;
+            grid-column-end: 4;
+            height: 10vw;
+            background-color: rgb(180,190,200);
+            margin-bottom: 1px;
+        }
+        
+            .grid-container-1 > div:nth-child(5) {
+           grid-column-start: 1;
+            grid-column-end: 4;
+            height: 10vw;
+            background-color: rgb(180,190,200);
+            margin-bottom: 1px;
+        }
+    
+    
+    
+    </style>
+</head>
+<body>
+    
+    <section class="grid-container grid-container-1">
+        
+        <div>
+        1
+        </div>
+        
+        <div>
+        2
+        </div>
+        
+        <div>
+        3
+        </div>
+        
+        <div>
+        4
+        </div>
+        
+        <div>
+        5
+        </div>
+    
+    
+    
+    
+    </section>
+    
+
+</body>
+</html>
