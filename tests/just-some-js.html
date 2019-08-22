@@ -5,12 +5,39 @@
     
     
     <style>
+        
+        #hidden {
+            display: none;
+        }
     
         .my-button:hover {
 cursor: pointer;
     }
+        
+        
+            @media only screen and (min-width: 600px) {
+        
+        #hidden {
+            display: none;
+        }
+        
+        }
     
     </style>
+    
+    
+    <script>
+        
+    var x = window.innerWidth;    
+    
+while (x > 600) {
+  document.getElementById("hidden").style.display = "none"
+}
+  }
+    
+    
+    
+    </script>
 </head>
 <body>
     
@@ -23,6 +50,11 @@ cursor: pointer;
     Result: <span id="result"> </span>
     
     </p>
+    
+    
+        <p class="my-button" onclick='document.getElementById("hidden").style.display = "block"'>Show</p>
+    
+    <p id="hidden">Show me</p>
 
 </body>
 </html>
