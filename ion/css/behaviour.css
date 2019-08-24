@@ -1,0 +1,33 @@
+/*---------------------
+Behaviour
+---------------------*/
+
+.island:hover {
+    /*Test background-color: red;*/
+    cursor: pointer;
+}
+
+.island:hover .layer {
+        left: 15%;
+        transform: rotate(0deg); 
+}
+
+.island:hover .layer-b {
+    top: -21%;
+}
+
+.island:hover .layer-c {
+    top: -55%;
+}
+
+.island:hover .layer-d {
+    top: -89%;
+}
+
+.layer-d:hover article {
+    display: block;
+}
+
+.article:hover {
+    cursor: default;
+}

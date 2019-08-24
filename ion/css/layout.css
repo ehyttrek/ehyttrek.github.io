@@ -1,0 +1,117 @@
+/*---------------------
+Layout
+---------------------*/
+
+h1,h2,h3,h4,h5,h6,
+p {
+    padding: 1em 4vw 1em 4vw;
+}
+
+p {
+    padding-bottom: 1em;
+    padding-top: 0;
+}
+
+h4 {
+    padding-bottom: 0;
+}
+
+
+
+
+
+.sea {
+    position: relative;
+    margin: 5vw auto;
+    width: 89vw;
+    height: 55vw;
+    overflow: hidden;
+}
+
+.layer,
+.layer article,
+.island {
+    position: absolute;
+}
+
+.layer-a,
+.layer-b,
+.layer-c,
+.layer-d {
+    left: 15%;
+    top: 15%;
+}
+
+.layer-a {
+     transform: rotate(-5deg); 
+        left: 8%;
+}
+
+.layer-b {
+     transform: rotate(5deg); 
+        left: 21%;    
+}
+
+.layer-c {
+    transform: rotate(2deg);  
+}
+
+.docu,
+.further-reading,
+.copyright {
+        border-top: 1px solid rgba(70,70,70,0.5);
+}
+
+/**--------
+Layout Articles
+--------**/
+
+article {
+    width: 21em;
+    border-radius: 1em;
+    max-height: 21em;
+    overflow-y: scroll;
+}
+
+article h3,
+article h4,
+article h5,
+article p,
+article pre {
+    padding: 0 0.8em 0.5em 0.8em;
+}
+
+article pre {
+    padding-top: 0;
+}
+
+article .further-reading {
+    margin-top: 1em;
+    padding-top: 0.5em;
+}
+
+article h3 {
+    padding-top: 0.5em;
+}
+article h4 {
+    padding-top: 1em;
+}
+
+article.right {
+    left: 50%;
+    top: -150%
+}
+
+
+/**--------
+Specific Positions
+--------**/
+
+
+#island-000 {
+    left: 10vw;
+    top: 30vw;
+}
+
+#layer-000-01 {
+}

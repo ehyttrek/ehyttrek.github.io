@@ -1,0 +1,81 @@
+/*
+Stylesheet for the Islands Of Knowledge (ION) project. Version 1.0.0.0
+© 2019 Enno Hyttrek
+*/
+
+/*---------------------
+Imports
+---------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i&display=swap);
+
+@import url(reset.css);
+@import url(layout.css);
+@import url(behaviour.css);
+@import url(typography.css);
+
+
+/*---------------------
+Shapes
+---------------------*/
+
+.layer,
+.island {
+    border-radius: 50%;
+}
+
+/*---------------------
+Sizes
+---------------------*/
+
+/**--------
+Relative Sizes
+--------**/
+
+.layer {
+    width: 70%;
+    padding: 7%;
+}
+
+/**-------------
+Absolut Sizes
+-------------**/
+
+.size-1 {
+    width: 55vw;
+    height: 13vw;
+}
+
+.size-2 {
+     width: 34vw;
+    height: 8vw;   
+}
+
+
+
+
+/*---------------------
+Color & Style
+---------------------*/
+
+article {
+    background-color: rgba(255,255,255,0.8);
+}
+
+.sea {
+     background-color: rgba(20,50,150,0.9);   
+}
+
+.island {
+    background-color: rgba(20,150,20,0.9);
+}
+
+.layer {
+    background-color: rgba(20,200,20,0.7);
+}
+
+.layer:hover {
+    background-color: rgba(20,255,50,0.9);
+}
+
+
