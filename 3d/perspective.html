@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS 3D Perspective</title>
+    
+    <style>
+        
+        .scene {
+            margin-bottom: 4em;
+        }
+    
+        .panel {
+            height: 200px;
+            width: 200px;
+        }
+        
+        .red {
+            background-color: rgb(255,50,0);
+        }
+        
+        .rotate {
+            transform: perspective(200px) rotatey(21deg);
+        }
+        
+        
+        /*--------*/
+        
+        .scene {
+  width: 200px;
+  height: 200px;
+  perspective: 600px;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.cube__face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+    border-radius: 50%;
+    background-color: rgba(200,200,200,0.6);
+    border: 5px solid black;
+}
+        
+        
+.cube__face--front  { transform: rotateY(  0deg); }
+.cube__face--right  { transform: rotateY( 90deg); }
+.cube__face--back   { transform: rotateY(180deg); }
+.cube__face--left   { transform: rotateY(-90deg); }
+.cube__face--top    { transform: rotateX( 90deg); }
+.cube__face--bottom { transform: rotateX(-90deg); }
+        
+.cube__face--front  { transform: rotateY(  0deg) translateZ(100px); }
+.cube__face--right  { transform: rotateY( 90deg) translateZ(100px); }
+.cube__face--back   { transform: rotateY(180deg) translateZ(100px); }
+.cube__face--left   { transform: rotateY(-90deg) translateZ(100px); }
+.cube__face--top    { transform: rotateX( 90deg) translateZ(100px); }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(100px); } 
+        
+.cube.show-front  { transform: translateZ(-100px) rotateY(   0deg); }
+.cube.show-right  { transform: translateZ(-100px) rotateY( -90deg); }
+.cube.show-back   { transform: translateZ(-100px) rotateY(-180deg); }
+.cube.show-left   { transform: translateZ(-100px) rotateY(  90deg); }
+.cube.show-top    { transform: translateZ(-100px) rotateX( -90deg); }
+.cube.show-bottom { transform: translateZ(-100px) rotateX(  90deg); }  
+        
+        .cube { transition: transform 1s; }
+    
+    </style>
+    
+</head>
+<body>
+    <div class="scene">
+        <div class="panel red rotate">
+
+        </div>
+    </div>
+    
+    <!--Cube -->
+    
+    <div class="scene">
+  <div class="cube">
+    <div class="cube__face cube__face--front">front</div>
+    <div class="cube__face cube__face--back">back</div>
+    <div class="cube__face cube__face--right">right</div>
+    <div class="cube__face cube__face--left">left</div>
+    <div class="cube__face cube__face--top">top</div>
+    <div class="cube__face cube__face--bottom">bottom</div>
+  </div>
+</div>
+
+</body>
+</html>
