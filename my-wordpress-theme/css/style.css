@@ -1,0 +1,33 @@
+* {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+        
+            body {
+              background-color: rgb(180,190,200); 
+            }
+
+            h1,h2,h3,h4,h5,h6,
+            p {
+            padding: 20px;
+            } 
+            
+            p {
+            padding-left: 50px; 
+            font-size: 1.3em;                
+            }
+
+            h2,p {
+                font-family: Arial;                
+            }
+                      
+            
+            main p {
+              background-color: rgb(220,230,240);                 
+            }
+            
+            footer p {
+                color: #fff;
+               background-color: rgb(20,30,40); font-size: 0.9em;          
+            }
