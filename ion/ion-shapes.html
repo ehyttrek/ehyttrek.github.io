@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ion shapes</title>
+    
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        
+        .grid-v,
+        .grid-h {
+            position: absolute;
+            width: 100vw;
+            height: 100vw;
+
+        }
+        
+               .grid-v {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        
+        .grid-v div {
+            width: 10vw;
+            height: 100vw;
+            border-right: 1px solid rgba(255,255,255,0.1);
+        }
+        .grid-h div {
+            width: 100vw;
+            height: 10vw;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }        
+    
+        .red {
+            background-color: rgb(255,0,0);
+        }
+        
+        .dark-blue-green {
+            background-color: rgba(0,30,30,0.5);
+        }
+        
+        .light-sky-blue {
+            background-color: rgba(50,150,230,0.5);
+        }
+        
+        .mid-sea-blue {
+            background-color: rgba(0,100,130,1);
+        }        
+        
+        .polygon-1 {
+            position: absolute;
+            shape-outside: polygon(10% 50%, 
+                0% 100%, 
+                100% 100%, 
+                100% 100%,
+                90% 60%,
+                70% 78%,
+                50% 28%,
+                30% 90%);
+            clip-path: polygon(10% 50%, 
+                0% 100%, 
+                100% 100%, 
+                100% 100%,
+                90% 60%,
+                70% 78%,
+                50% 28%,
+                30% 90%);
+            width: 100%;
+            padding-top: 20%;
+            top: 0;
+        }
+        
+        
+        .polygon-2 {
+            position: absolute;
+            shape-outside: polygon(10% 70%, 
+                0% 100%, 
+                100% 100%, 
+                95% 100%,
+                80% 50%,
+                70% 78%,
+                50% 38%,
+                30% 90%);
+            clip-path: polygon(10% 70%, 
+                0% 100%, 
+                100% 100%, 
+                95% 100%,
+                80% 50%,
+                70% 78%,
+                50% 38%,
+                30% 90%);
+            width: 100%;
+            padding-top: 20%;
+            top: 0;
+        }        
+        
+        .polygon-canvas {
+            position: relative;
+            padding-top: 20%;
+            width: 100vw;
+        }
+
+    
+    
+    </style>
+    
+    
+</head>
+<body class="mid-sea-blue">
+    
+    <div class="grid-v">
+<div></div><div></div><div></div><div></div><div></div>
+<div></div><div></div><div></div><div></div><div></div>    
+    </div> <!--.grid-v -->
+    
+    <div class="grid-h">
+<div></div><div></div><div></div><div></div><div></div>
+<div></div><div></div><div></div><div></div><div></div>    
+    </div> <!--.grid-h -->    
+
+    <div class="polygon-canvas light-sky-blue">
+    
+    <div class="polygon-1 dark-blue-green"></div>
+    <div class="polygon-2 dark-blue-green"></div>        
+    </div>    
+
+</body>
+</html>
