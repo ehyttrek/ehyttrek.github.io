@@ -1,3 +1,10 @@
+<!--
+Index File für Ennos 'My Wordpress Theme'.
+Übung im Rahmen des Kurses Software Entwickler: WordPress
+Autor: Enno Hyttrek
+Version: i.1.0.1.1, 190829, 14:30
+-->
+
 <!DOCTYPE html>
 <html lang="de">
     <head>
@@ -11,7 +18,7 @@
     <body>
         <header>
             <h1>Site Titel</h1>
-            <nav>
+            <nav id="main-nav"> <!--(id added i.1.0.1.1 Ehy) -->
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Profil</a></li>   
@@ -23,27 +30,30 @@
         <main>
             <article class="home">
                 <h2>Willkommen!</h2>
-                <section class="flex-container article-content">
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.    
-                    </p>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.    
-                    </p>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.    
-                    </p>
-                
-                </section>
-                <aside>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.    
-                    </p>
-                </aside>
+                <div class="section-aside-wrapper"> <!--(wrappers added i.1.0.1.1 Ehy) -->
+                    <section class="flex-container article-content">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.    
+                        </p>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.    
+                        </p>
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.    
+                        </p>
+
+                    </section>
+                    <aside class="article-sidebar">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.    
+                        </p>
+                    </aside>
+                </div><!--.section-aside-wrapper -->
             </article>
             
             <article class="profil">
                 <h2>Profil</h2>
+               <div class="section-aside-wrapper">                
                 <section class="flex-container article-content">
                     <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.    
@@ -53,15 +63,17 @@
                     </p>
                 
                 </section>
-                <aside>
+                <aside class="article-sidebar">
                     <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.    
                     </p>
                 </aside>
+              </div><!--.section-aside-wrapper -->                  
             </article>   
             
             <article class="kontakt">
                 <h2>Kontakt</h2>
+               <div class="section-aside-wrapper">                
                 <section class="flex-container article-content">
                     <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.    
@@ -69,11 +81,12 @@
 
                 
                 </section>
-                <aside>
+                <aside class="article-sidebar">
                     <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.    
                     </p>
                 </aside>
+              </div><!--.section-aside-wrapper -->                    
             </article>            
         </main>
         

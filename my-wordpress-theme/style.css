@@ -2,7 +2,7 @@
 Stylesheet für Ennos 'My Wordpress Theme'.
 Übung im Rahmen des Kurses Software Entwickler: WordPress
 Autor: Enno Hyttrek
-Version: 1.0.1.1, 190829, 14:30
+Version: s.1.0.1.1, 190829, 14:30
 ---------------------*/
 
 /*---------------------
@@ -30,6 +30,10 @@ body {
     font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
 }
 
+a {
+    text-decoration: none; /*(added 1.0.1.1 Ehy)*/
+}
+
 /*---------------------
 Layout
 ---------------------*/
@@ -44,6 +48,30 @@ p,ul {
     padding: 1em 20px;
 }
 
+
+/*---------------------
+Navigation (chapter added 1.0.1.1 Ehy) 
+---------------------*/
+
+nav#main-nav {
+    
+}
+
+nav#main-nav ul {
+    
+}
+
+nav#main-nav ul li {
+    
+}
+
+nav#main-nav ul li a {
+    
+}
+
+nav#main-nav ul li a:hover {
+    
+}
 
 /*---------------------
 Color & Style
@@ -79,7 +107,17 @@ main {
     background-color: rgb(0,100,70);    
 }
 
+aside {
+    background-color: rgba(255,255,255,0.3);    
+}
 
+/*---------------------
+Typography (chapter added 1.0.1.1 Ehy) 
+---------------------*/
+
+p {
+ font-weight: 300;   
+}
 
 
 /*---------------------
@@ -87,20 +125,67 @@ Responsive Design -- Mobile First
 ---------------------*/
 
 @media only screen and (min-width: 600px) {
-    
-
 /**--------
-Layout
+Breakpoint 600px Layout
 --------**/
 
+.section-aside-wrapper,    
 .flex-container {
   display: flex;
 }   
     
-.article-content p {
-    width: 30%;
+.flex-container {
+flex-wrap: wrap;    /*(added 1.0.1.1 Ehy)*/
 }   
     
+    .article-content {
+        width: 70%;
+    }    
+    
+    .article-sidebar {
+        width: 30%;
+    }
+    
+.article-content p {
+    width: 50%; /*(changed 1.0.1.1 Ehy)*/
+} 
+    
+    
+    
+        
+}
+
+
+
+@media only screen and (min-width: 1024px){ /*(added 1.0.1.1 Ehy)*/
+ /**--------
+Breakpoint 1024px Layout
+--------**/
+
+.article-content p {
+    width: 30%;
+}      
+    
+    
+}
+
+
+@media only screen and (min-width: 1440px){ /*(added 1.0.1.1 Ehy)*/
+ /**--------
+Breakpoint 1440px Layout
+--------**/
+    
+    .article-content {
+        width: 80%;
+    }    
+    
+    .article-sidebar {
+        width: 20%;
+    }    
+
+.article-content p {
+    width: 25%;
+}      
     
     
 }
