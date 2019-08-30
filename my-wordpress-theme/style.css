@@ -62,7 +62,7 @@ nav#main-nav ul {
 }
 
 nav#main-nav ul li {
-    
+    display: inline-block;
 }
 
 nav#main-nav ul li a {
