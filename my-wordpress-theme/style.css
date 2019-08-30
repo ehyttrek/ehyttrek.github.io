@@ -10,6 +10,8 @@ Imports
 ---------------------*/
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i&display=swap');
 
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
 
 /*---------------------
 Reset
@@ -34,6 +36,10 @@ a {
     text-decoration: none; /*(added 1.0.1.1 Ehy)*/
 }
 
+nav#main-nav ul {
+    display: none;
+}
+
 /*---------------------
 Layout
 ---------------------*/
@@ -42,7 +48,7 @@ Layout
   display: block;
 }
 
-
+.burger-wrapper,
 h1,h2,
 p,ul {   
     padding: 1em 20px;
@@ -63,14 +69,21 @@ nav#main-nav ul {
 
 nav#main-nav ul li {
     display: inline-block;
+    background-color:  rgb(40,50,60);
+    border-radius: 5px;
+}
+
+nav#main-nav ul li:hover {
+    background-color:  rgb(255,128,0);
 }
 
 nav#main-nav ul li a {
-    
+    color: rgba(255,255,255,0.8);
+    padding: 6px 6px 10px 6px;
 }
 
 nav#main-nav ul li a:hover {
-    
+    color: #fff;
 }
 
 /*---------------------
@@ -83,7 +96,14 @@ body {
 }
 
 header {
-    background-color: rgb(140,150,160);    
+    background-color: rgb(140,150,160); 
+    color: rgb(140,0,20); 
+}
+
+#header {
+    background-image: url(img/golden-4387704_1280.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 main {
@@ -120,6 +140,11 @@ p {
 }
 
 
+.burger-wrapper {
+    font-size: 2em;
+}
+
+
 /*---------------------
 Responsive Design -- Mobile First
 ---------------------*/
@@ -149,6 +174,14 @@ flex-wrap: wrap;    /*(added 1.0.1.1 Ehy)*/
 .article-content p {
     width: 50%; /*(changed 1.0.1.1 Ehy)*/
 } 
+    
+nav#main-nav ul {
+    display: block;
+}
+    
+    .burger-wrapper {
+        display: none;
+    }    
     
     
     
