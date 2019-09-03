@@ -21,6 +21,7 @@ function register_my_menus() {
 
 
 function my_widgets_init() {
+
         register_sidebar( array(
 		'name'          => 'Meine Footer Widgets',
 		'id'            => 'footer-widget',
