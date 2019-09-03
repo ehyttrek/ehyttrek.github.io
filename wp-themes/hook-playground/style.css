@@ -1,0 +1,13 @@
+/*
+Theme Name: Enno's Hook Playground
+Author: Enno Hyttrek
+Description: A lower than minimal theme, just to explore hooks.
+*/
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
