@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+    <title>Position Boxes</title>
+        
+    <style>
+        
+        body {
+            font-size: 1.5em;
+        }
+        
+        div {
+            margin: 1px;
+            color: #fff;
+        }
+        
+        p {
+            margin: 0;
+            padding: 1em 0;
+        }
+        
+        .box {
+        background-color: rgba(60,70,80,0.7);
+        width: 20vw;
+        height: 20vw;
+        }
+        
+        .container {
+          background-color: rgb(160,170,180);  
+        margin-bottom: 5vw;    
+        }
+        
+        
+/*
+Overlay
+*/      
+        .overlay {
+            position: relative;
+            height: 50vw;
+        }
+        
+        .overlay .box,
+        .overlay p {
+            position: absolute;
+        }
+        
+        .overlay .box-1 {
+            z-index: 10;
+            left: 50vw;
+            top: 20vw;            
+        }        
+        
+        .overlay .box-2 {
+            z-index: 11;
+            margin: 10vw 0 0 40vw;
+        }    
+        
+        
+/*
+Side By Side 1 (with added wrapper)
+*/        
+        
+        .flex-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .side-by-side .box {
+            width: 100px;
+            height: 100px;
+        }
+        
+/*
+Side By Side 2 (without added wrapper)
+*/          
+        
+        .side-by-side-2 {
+        display: flex;
+        flex-wrap: wrap;
+        }
+        
+        .side-by-side-2 p {
+            width: 100%;
+        }
+        
+    </style>    
+        
+
+        
+    </head>
+    
+    <body>
+        
+        <div class="container overlay">
+            <p>Overlay</p>
+            
+            <div class="box box-1">
+                <p>Box 1</p>
+            </div>
+        
+            <div class="box box-2">
+                <p>Box 2</p>            
+            </div>
+        
+        </div>
+        
+        
+        <div class="container side-by-side side-by-side-1">
+            <p>Side By Side 1 (with added wrapper)</p>
+            
+            <div class="flex-wrapper">
+                <div class="box box-1">
+                    <p>Box 1</p>                
+                </div>
+
+                <div class="box box-2">
+                    <p>Box 2</p>            
+                </div>
+                <div class="box box-1">
+                    <p>Box 3</p>                
+                </div>
+
+                <div class="box box-2">
+                    <p>Box 4</p>            
+                </div> 
+                <div class="box box-1">
+                    <p>Box 5</p>                
+                </div>
+
+                <div class="box box-2">
+                    <p>Box 6</p>            
+                </div>                
+            </div><!--.flex-wrapper -->    
+        
+        </div>        
+        
+<div class="container side-by-side side-by-side-2">
+            <p>Side By Side 2 (without added wrapper)</p>
+            
+
+                <div class="box box-1">
+                    <p>Box 1</p>                
+                </div>
+
+                <div class="box box-2">
+                    <p>Box 2</p>            
+                </div>
+                <div class="box box-1">
+                    <p>Box 3</p>                
+                </div>
+
+                <div class="box box-2">
+                    <p>Box 4</p>            
+                </div> 
+                <div class="box box-1">
+                    <p>Box 5</p>                
+                </div>
+
+                <div class="box box-2">
+                    <p>Box 6</p>            
+                </div>                
+   
+        
+        </div>                
+    
+    
+    </body>
+    
+</html>
