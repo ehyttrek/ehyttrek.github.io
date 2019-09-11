@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang="de">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Images in a Round Frame</title>
+
+        <style>
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            .content-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 1vw;
+            }
+            
+            
+            .img-wrapper {
+                position: relative;
+                height: 30vw;
+                background-color: rgb(220,220,220);
+                overflow: hidden;
+                border-radius: 50%;
+            }
+            
+            .img-wrapper img {
+                position: absolute;
+
+            }
+            
+            .img-wrapper .img-a-1 {
+                width: auto;
+                height: 130%;
+                left: -23vw;
+                top: -4vw;
+            }
+            
+            .img-wrapper,
+            .content-module-wrapper {
+                width: 30vw;
+                width: 30vw;
+            }
+            
+            h1,
+            .content-module-wrapper {
+                margin: 20px 1vw; 
+            }
+            
+            .info-wrapper {
+                padding: 1em 1em 0 2em;
+            }
+            
+            .info-wrapper h2,
+            .info-wrapper p {
+                padding-bottom: 0.5em;
+            }
+            
+            
+            /*
+            Responsive Design
+            */
+            
+            @media only screen and (max-width: 850px) {
+                
+                
+                .img-wrapper,
+                .content-module-wrapper {
+                    width: 40vw;
+                    width: 40vw;
+                }
+                
+                .img-wrapper {
+                    height: 40vw;
+                }    
+                
+                h1,
+                .content-module-wrapper {
+                margin: 20px 3.5vw; 
+            }
+                
+                .img-wrapper .img-a-1 {
+                width: auto;
+                height: 130%;
+                left: -30.5vw;
+                top: -4vw;
+            }
+                
+                
+                
+            }
+            
+            
+            @media only screen and (max-width: 600px) {
+                
+                
+                body {
+                    font-size: 1.5em;
+                }
+                
+                
+                .img-wrapper,
+                .content-module-wrapper {
+                    width: 90vw;
+                    width: 90vw;
+                }
+                
+                .img-wrapper {
+                    height: 90vw;
+                }    
+                
+                h1,
+                .content-module-wrapper {
+                margin: 20px 7.5vw 0 2.5vw; 
+            }
+                
+                .img-wrapper .img-a-1 {
+                width: auto;
+                height: 130%;
+                left: -69vw;
+                top: -7vw;
+            }  
+                
+            .info-wrapper {
+                padding: 1em 10px 0 10px;
+            }                
+                
+            }            
+
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <h1>Responsive Flex Layout, Desktop First</h1>
+        
+        
+        <div class="content-wrapper">
+            <div class="content-module-wrapper">
+                <div class="img-wrapper">
+                    <img class="img-a-1" src="img/beach-84533_1280.jpg" alt="Bild eines roten Cocktails am Strand, im Hintergrund das blaue Meer" width="100%">
+                </div>    
+
+                <div class="info-wrapper">
+                    <h2>Title</h2>
+
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                    </p>
+                    <p>
+                    <a href="#">More ...</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-module-wrapper">
+                <div class="img-wrapper">
+                    <img class="img-a-1" src="img/beach-84533_1280.jpg" alt="Bild eines roten Cocktails am Strand, im Hintergrund das blaue Meer" width="100%">
+                </div>    
+
+                <div class="info-wrapper">
+                    <h2>Title</h2>
+
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                    </p>
+                    <p>
+                    <a href="#">More ...</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-module-wrapper">
+                <div class="img-wrapper">
+                    <img class="img-a-1" src="img/beach-84533_1280.jpg" alt="Bild eines roten Cocktails am Strand, im Hintergrund das blaue Meer" width="100%">
+                </div>    
+
+                <div class="info-wrapper">
+                    <h2>Title</h2>
+
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                    </p>
+                    <p>
+                    <a href="#">More ...</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-module-wrapper">
+                <div class="img-wrapper">
+                    <img class="img-a-1" src="img/beach-84533_1280.jpg" alt="Bild eines roten Cocktails am Strand, im Hintergrund das blaue Meer" width="100%">
+                </div>    
+
+                <div class="info-wrapper">
+                    <h2>Title</h2>
+
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
+                    </p>
+                    <p>
+                    <a href="#">More ...</a>
+                    </p>
+                </div>
+            </div> 
+        </div>    
+
+    </body>
+    
+</html>

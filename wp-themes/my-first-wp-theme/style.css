@@ -1,0 +1,159 @@
+/*---------------------
+Theme Name: My First WordPress Theme
+Author: Enno Hyttrek
+---------------------*/
+
+
+/*---------------------
+Import
+---------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,600&display=swap');
+
+
+/*---------------------
+Reset
+---------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: Calibri,'Fira Sans',Arial,sans-serif; 
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*---------------------
+Layout
+---------------------*/
+
+h1,h2,h3,h4,h5,h6,
+p,
+ul,
+aside div {
+    padding: 0 20px;
+}
+
+
+.my-banner {
+    position: relative;
+    height: 31vw;
+}
+
+.my-banner .wp-block-cover,
+.my-banner-text1,
+.my-banner-text2 {
+    position: absolute;
+}
+
+.my-banner-text1,
+.my-banner-text2 {
+    padding-left: 60vw;
+}
+
+.my-banner-text1 {
+    padding-top: 5vw;
+    font-size: 5vw;
+}
+
+.my-banner-text2 {
+    padding-top: 9vw;
+        font-size: 9vw;
+}
+
+main {
+    min-height: 80vh;
+}
+
+
+
+
+ 
+/*---------------------
+Navigation
+---------------------*/
+
+nav#main-menu {
+    position: fixed;
+    top: 0;
+    background-color: rgba(255,255,255,0.7);
+    width: 100%;
+    z-index: 100;
+}
+
+nav#main-menu ul {
+    
+}
+
+nav#main-menu ul li {
+    display: inline-block;
+}
+
+nav#main-menu ul li a {
+    
+}
+
+nav#main-menu ul li a:hover {
+    
+}
+
+/*---------------------
+Color & Style
+---------------------*/
+
+
+body {
+    background-color: rgb(40,50,60);
+}
+
+
+
+main,
+#header {
+    background-color: #fff;
+}
+
+footer {
+    color: rgba(255,255,255,0.8);
+}
+
+
+/*---------------------
+Typography
+---------------------*/
+
+.my-banner {
+    font-family: "Bernard MT Condensed", Georgia, Times, serif;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+
+/*---------------------
+Gutenberg Adjustments
+---------------------*/
+
+/**--------
+Block 'Cover'
+--------**/
+
+.wp-block-cover, .wp-block-cover-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-color: transparent;
+}
