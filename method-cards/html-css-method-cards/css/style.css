@@ -1,0 +1,81 @@
+/* ----------------------------------------
+Stylesheet for HTML/CSS MethodCards.
+© 2019, Enno Hyttrek. All rights reserved.
+---------------------------------------- */
+
+
+/* ---------------------
+Imports
+--------------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i&display=swap);
+
+@import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
+
+
+/* ---------------------
+Reset
+--------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------------------
+Typography
+--------------------- */
+
+    body {
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+/* ---------------------
+Navigation
+--------------------- */
+
+nav#main-nav {
+
+}
+
+nav#main-nav ul {
+    
+}
+
+nav#main-nav ul li {
+    display: inline-block;
+}
+
+nav#main-nav ul li a {
+    
+}
+
+nav#main-nav ul li a:hover {
+    
+}
+
+/* ---------------------
+Layout
+--------------------- */
+
+.card-wrapper {
+    margin: 30px;
+    border-radius: 2vw;
+}
+
+/* ---------------------
+Color & Style
+--------------------- */
+
+body {
+    background-color: rgb(40,50,60);
+}
+
+.card-wrapper {
+    background-color: #fff;
+}
+
+
+

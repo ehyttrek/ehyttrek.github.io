@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mobile Menu without JavaScript</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">  
+
+<style>
+
+/*---------------------
+Reset
+---------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, a {
+    color: #fff;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+/*---------------------
+Layout
+---------------------*/
+
+h1,h2,h3,h4,h5,h6,
+p,ul,i {
+    padding: 0 2rem;
+}
+
+h1,h2 {
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
+
+header {
+    min-height: 5em;
+}
+
+main {
+    min-height: 90vh;
+}
+
+footer {
+    min-height: 10vw;
+}
+
+nav#main-nav {
+    height: 100vw;
+}
+
+/*---------------------
+Navigation
+---------------------*/
+
+nav#main-nav {
+    width: 100%;
+}
+
+nav#main-nav ul {
+
+}
+
+nav#main-nav ul li {
+display: block;
+}
+
+nav#main-nav ul li a {
+
+}
+
+nav#main-nav ul li a:hover {
+
+}
+
+/*---------------------
+Color & Style
+---------------------*/
+
+body {
+    background-color: rgb(50,60,70);
+}
+
+header {
+    background-color: rgb(150,160,170);    
+}
+
+nav#main-nav {
+    background-color: rgba(50,60,70,0.7);
+}
+
+main {
+    background-color: #fff;
+    color: rgb(50,60,70); 
+}
+
+/*---------------------
+Typography
+---------------------*/
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*--------------------- 
+Responsive design, mobile first 
+---------------------*/
+        
+@media only screen and (min-width: 600px) {
+
+    nav#burger-icon {
+        display: none;
+    }
+
+    nav#main-nav {
+        position: fixed;
+        top: 0;
+        height: auto;
+    }
+
+    nav#main-nav ul li {
+        display: inline-block;
+    }
+
+}
+
+
+</style>
+
+</head>
+
+<body>
+<header>
+    <h1>Mobile Nav without JavaScript</h1>
+    <nav id="burger-icon">
+            <i class="fas fa-bars"></i>
+    </nav>
+
+</header>
+
+<main>
+
+    <section id="section-1">
+        <h2>Section 1</h2>
+    </section>
+
+    <section id="section-2">
+        <h2>Section 3</h2>
+    </section>
+
+    <section id="section-3">
+        <h2>Section 2</h2>
+    </section>
+
+</main>
+
+<footer>
+    <p>
+        &copy; 2019, Enno Hyttrek
+    </p>
+
+</footer>
+<nav id="main-nav">    
+<ul>
+    <li><a href="#">Section 1</a></li>
+    <li><a href="#">Section 2</a></li>
+    <li><a href="#">Section 3</a></li>
+</ul>
+</nav>
+
+</body>
+
+</html>
