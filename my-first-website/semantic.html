@@ -2,49 +2,9 @@
 <html lang="en">
     <head>
         <title>My First Website | Semantic Structure</title>
+        <link rel="stylesheet" href="css/style.css">
         
         <style>
-        
-            header {  
-                color: #fff;    
-                background-color: rgb(150,160,170);
-                padding: 5px;
-            } 
-            
-/*------------------------------------------
-Navigation
-------------------------------------------*/
-  
-            #main-nav {
-                
-            }
-            
-            #main-nav ul {
-               list-style-type: none; 
-                padding: 0;
-            }
-            
-            #main-nav ul li {
-                display: inline-block;
-                margin-right: 10px;
-                background-color: rgb(50,60,70); 
-            }  
-            
-            #main-nav ul li:hover {
-                 background-color: #fff;               
-            }            
-            
-            #main-nav ul li a {
-               color: #fff;   
-                text-decoration: none;
-                padding: 10px;
-            }     
-            
-            #main-nav ul li a:hover {
-               color: rgb(255,128,0);              
-            }             
-            
-
         </style>
         
     </head>
@@ -57,7 +17,7 @@ Navigation
         <ul>
             <li><a href="index.html">Home</a></li>    
             <li><a href="non-semantic.html">Non Semantic</a></li>  
-            <li><a href="semantic.html">Semantic</a></li>    
+            <li class="current-item"><a href="semantic.html">Semantic</a></li>    
             <li><a href="block-and-inline-elements.html">Block and Inline</a></li>             
             </ul>  
         </nav>    

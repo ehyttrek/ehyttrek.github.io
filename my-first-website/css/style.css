@@ -1,0 +1,52 @@
+/*
+Stylesheet for the 'My First Website' exercise project
+*/
+
+        
+            header {  
+                color: #fff;    
+                background-color: rgb(150,160,170);
+                padding: 5px;
+            } 
+            
+/*------------------------------------------
+Navigation
+------------------------------------------*/
+  
+            #main-nav {
+                
+            }
+            
+            #main-nav ul {
+               list-style-type: none; 
+                padding: 0;
+            }
+            
+            #main-nav ul li {
+                display: inline-block;
+                margin-right: 10px;
+                background-color: rgb(50,60,70); 
+                padding: 2px 8px;                
+            }  
+            
+            #main-nav ul li:hover {
+                 background-color: #fff;   
+
+            }            
+            
+            #main-nav ul li a {
+               color: #fff;   
+                text-decoration: none;
+            }     
+            
+            #main-nav ul li a:hover {
+               color: rgb(255,128,0);              
+            } 
+
+            #main-nav ul li.current-item,
+            #main-nav ul li.current-item a {
+                 background-color: #fff; 
+                color: rgb(255,128,0);                 
+            }
+
+
