@@ -2,6 +2,51 @@
 <html lang="en">
     <head>
         <title>My First Website | Semantic Structure</title>
+        
+        <style>
+        
+            header {  
+                color: #fff;    
+                background-color: rgb(150,160,170);
+                padding: 5px;
+            } 
+            
+/*------------------------------------------
+Navigation
+------------------------------------------*/
+  
+            #main-nav {
+                
+            }
+            
+            #main-nav ul {
+               list-style-type: none; 
+                padding: 0;
+            }
+            
+            #main-nav ul li {
+                display: inline-block;
+                margin-right: 10px;
+                background-color: rgb(50,60,70); 
+            }  
+            
+            #main-nav ul li:hover {
+                 background-color: #fff;               
+            }            
+            
+            #main-nav ul li a {
+               color: #fff;   
+                text-decoration: none;
+                padding: 10px;
+            }     
+            
+            #main-nav ul li a:hover {
+               color: rgb(255,128,0);              
+            }             
+            
+
+        </style>
+        
     </head>
 
     <body>
@@ -11,9 +56,9 @@
         <nav id="main-nav">    
         <ul>
             <li><a href="index.html">Home</a></li>    
-            <li><a href="non-semantic.html">Non Semantic Structure</a></li>  
-            <li><a href="semantic.html">Semantic Structure</a></li>    
-            <li><a href="block-and-inline-elements.html">Block and Inline Elements</a></li>             
+            <li><a href="non-semantic.html">Non Semantic</a></li>  
+            <li><a href="semantic.html">Semantic</a></li>    
+            <li><a href="block-and-inline-elements.html">Block and Inline</a></li>             
             </ul>  
         </nav>    
             
@@ -26,7 +71,7 @@
             <h3>Article 1</h3>
 
             <p>
-            This is a paragraph. This is the standard way to mark up text. 
+            This is a <a href="#">paragraph</a>. This is the standard way to mark up text. 
             </p>
             <p>
             This is a another paragraph, just so we have two of them.
