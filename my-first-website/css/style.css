@@ -1,11 +1,12 @@
 /*
-Stylesheet for the 'My First Website' exercise project
+Stylesheet for the 'My First Website' exercise project.
+Version 1.0.0.0, 
 */
 
         
             header {  
                 color: #fff;    
-                background-color: rgb(150,160,170);
+                background-color: rgb(150,0,170);
                 padding: 5px;
             } 
             
@@ -49,4 +50,41 @@ Navigation
                 color: rgb(255,128,0);                 
             }
 
+/*------------------------------------------
+Color
+------------------------------------------*/
 
+.section-wrapper {
+    background-color: rgb(190,200,210);
+}
+
+article {
+    background-color: rgb(220,240,250);
+}
+
+
+/*------------------------------------------
+Typography
+------------------------------------------*/
+
+/*------------------------------------------
+Layout
+------------------------------------------*/
+header {
+                    background-image: url(../img/panda-4421395_1280.jpg);
+                background-size: cover;
+}
+
+
+.first-paragraph img {
+    width: 50%;
+}
+
+
+.flex-container {
+    display: flex;
+}
+
+/*------------------------------------------
+Mobile Responsive Design
+------------------------------------------*/
