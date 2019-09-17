@@ -2,32 +2,29 @@
 Some general styles for the Mobile Menu with JavaScript exercise.
 */
 
-
-
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
 }
-        
+
 body {
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: "Helvetica", Arial, sans-serif;
 }
 
 a {
     text-decoration: none;
 }
 
-
 footer {
-    color: rgb(210,220,230);
-    background-color: rgb(40,50,60);
+    color: rgb(210, 220, 230);
+    background-color: rgb(40, 50, 60);
     font-size: 0.8em;
 }
 
 footer a {
-    color: rgb(210,220,230);
+    color: rgb(210, 220, 230);
 }
 
 footer a:hover {
@@ -51,8 +48,8 @@ nav#secondary-nav ul li {
 
 nav#secondary-nav a {
     font-size: 0.8em;
-    background-color: rgba(210,220,230,0.8);
-    color: rgb(40,50,60);
+    background-color: rgba(210, 220, 230, 0.8);
+    color: rgb(40, 50, 60);
     padding: 3px;
 }
 
@@ -65,4 +62,3 @@ nav#secondary-nav a {
 .overview ul {
     list-style-type: none;
 }
-
