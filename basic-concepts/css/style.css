@@ -1,0 +1,64 @@
+/*-----
+Stylesheet for the HTML/CSS Basic Concepts exercise.
+-----*/
+
+/*-----
+Reset
+-----*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*-----
+Color
+-----*/
+
+/*div.content-wrapper .content {
+    background-color: rgb(0,255,0);
+}
+
+.content-wrapper .content {
+    background-color: rgb(0,255,0);
+}*/
+
+div.content-wrapper section {
+    background-color: rgb(0,255,0);
+
+
+}
+
+
+.my-header h1 {
+    background-color: rgb(0,255,0);
+}
+
+
+p {
+    background-color: rgb(0,255,0);
+}
+
+/*-----
+Typography
+-----*/
+
+div.content-wrapper section {
+     font-size: 1em;
+}
+
+/*-----
+Layout
+-----*/
+
+section {
+    margin: 1em;
+}
+
+div.content-wrapper section {
+        margin: 3px;
+}
+
+

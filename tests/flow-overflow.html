@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flow and Overflow</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-size: 1.3em;
+            }
+
+            section {
+                background-color: rgb(200, 230, 200);
+                border: 1px solid rgb(100, 130, 100);
+                margin-bottom: 20vh;
+                padding: 0.5em;
+            }
+
+            section.overflow {
+                min-height: 20vh;
+            }
+
+            section.overflow-hidden {
+                overflow: hidden;
+            }
+
+            section.overflow-scroll {
+                overflow: scroll;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="flow">
+            <h2>Flow</h2>
+            <p>
+                I am a block element of the type section. As a block element I
+                will always claim 100% of the horizontal space available to me.
+                In vertical direction I will become just as big as the content I
+                carry requires, as long as no one tries to manipulate my height
+                using CSS. This is called flow. Sometimes it is even called
+                "natural" flow.
+            </p>
+        </section>
+
+        <section class="overflow">
+            <h2>Overflow</h2>
+            <p>
+                I am also a section. I behave the same as my sister above, only
+                that someone has given me the value 20vh (that is 20 percewnt of
+                the viewport height) for my height property. You can see where I
+                end (I am green, by the way, just like my sisters). But still my
+                content goes further than my vertical size. This is called
+                overflow.
+            </p>
+        </section>
+
+        <section class="overflow overflow-hidden">
+            <h2>Overflow Hidden</h2>
+            <p>
+                I am, as well, a section. In fact we all are the same in this
+                aspect here on the page. We just have different flow or overflow
+                behaviour respectively. Overflow: hidden in my case. My height
+                is set to 20vh just like my sisters' above and below. You
+                probably won't even see this line anymore in most cases.
+            </p>
+        </section>
+
+        <section class="overflow overflow-scroll">
+            <h2>Overflow Scroll</h2>
+            <p>
+                Well, same for me. I am a section with text inside (the text
+                itself is in a paragraph of course, but that doesn't matter here
+                now). My height also 20vh, therefore I have the overeflow issue
+                as well, but in my case the user can scroll to see the entire
+                text. That would be 'overflow: scroll', yes, you are right!
+            </p>
+        </section>
+    </body>
+</html>
