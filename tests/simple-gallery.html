@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Gallery</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            section {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            p {
+                position: relative;
+                width: 33.1vw;
+                height: 33vw;
+                overflow: hidden;
+                margin: 0.5px;
+            }
+
+            p img {
+                position: absolute;
+                height: 100%;
+                width: auto;
+                left: -33%;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <p id="img1">
+                <img src="img/beach-84533_1280.jpg" width="100%" />
+            </p>
+
+            <p id="img2">
+                <img src="img/beach-84533_1280.jpg" width="100%" />
+            </p>
+
+            <p id="img2">
+                <img src="img/beach-84533_1280.jpg" width="100%" />
+            </p>
+        </section>
+
+        <script>
+            function fullImage() {
+                document.getElementById("[need get ID name in]").style.height =   ;
+            }
+        </script>
+    </body>
+</html>

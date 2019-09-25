@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Some Rookie JS Experiments</title>
+    
+    <style>
+    
+        #change-this {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        
+        .my-button {
+            cursor: pointer;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <h2>Execute multiple JS expressions in the onclick attribute</h2>
+    
+    <p>
+    It is actually possible to execute multiple JS expressions just in the onclick attribute without the need to build and call a function. It not as elegant and powerful of course, but it works. Check the source code of this file to see how.
+    </p>
+    
+    <p class="my-button" 
+         onclick=
+         "document.getElementById('change-this').style.height= '40px';
+          document.getElementById('change-this').style.backgroundColor= 'green';
+          document.getElementById('change-this').style.fontFamily= 'Arial';
+          ">Click Me</p>
+    
+    <p id="change-this">I'm changing</p>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Remove disabled attribute</title>
+    </head>
+    <body>
+        <button
+            onclick="document.getElementById('disabled-button').disabled = false;"
+        >
+            click me to enable my brother
+        </button>
+
+        <button
+            id="disabled-button"
+            onclick="document.getElementById('disabled-button').disabled = true;"
+            disabled
+        >
+            click me when I am enabled
+        </button>
+    </body>
+</html>
