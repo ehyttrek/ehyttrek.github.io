@@ -1,0 +1,190 @@
+/*-------------
+Main stylesheet for enno.hyttrek.com
+---------------------*/
+
+
+/*-------------
+Imports
+---------------------*/
+@import url(../fonts/source-sans-pro.css);
+
+
+
+
+/*-------------
+Reset
+---------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------
+Layout
+---------------------*/
+
+
+h1,h2,h3,h4,p,.main-nav ul {
+    padding: 0 2rem;
+}
+
+h1 {
+    padding-top: 10vw;
+}
+
+h2 {
+    padding-top: 3em;
+}
+
+p,h4 {
+    padding-bottom: 1em;
+}
+
+.main-header,
+.article-header {
+    position: relative;
+}
+
+.main-header {
+    background-image: url(../img/airport-4511374_1920-1440x811-10.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay,
+my-content {
+    position: absolute;
+    width: 100%;
+}
+
+header {
+    z-index: -1;
+}
+
+.overlay {
+    z-index: -2;
+}
+
+header,
+header .overlay {
+    height: 100vh;
+}
+
+.main-header .overlay {
+    opacity: 0.2;
+    background-image: url(../img/3px-dark-a-01.png);
+}
+
+article {
+    padding-bottom: 3em;
+}
+
+
+
+/*-------------
+Navigation
+---------------------*/
+
+nav.main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 1.8em;
+    background-color: rgba(40,50,60,0.7);
+    overflow-y: hidden;
+}
+
+nav.main-nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+
+nav.main-nav ul li {
+
+}
+
+
+nav.main-nav ul li a {
+    display: inline-block;
+    padding: 0.1em 0.5em 0.5em 0.5em;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+nav.main-nav ul li a:hover {
+    color: #fff;
+    background-color: rgba(255,255,255,0.3);
+}
+
+
+/*-------------
+Color & Style
+---------------------*/
+
+body {
+        color: #fff;
+    background-color: rgb(40,50,60);
+}
+
+header {
+
+}
+
+/*-------------
+Typography
+---------------------*/
+
+body {
+    font-family: 'Source Sans Pro';
+}
+
+h1,h2,h4 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+/*-------------
+Responsive
+---------------------*/
+
+@media screen and (min-width: 600px) {
+    
+    .my-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .my-content h4 {
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .my-content p {
+        padding-top: 1em;
+        width: 50%;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .my-content p {
+         width: 33%;       
+    }
+}
+
+
+/*-------------
+Overrides
+---------------------*/
+
+p.my-quote {
+    width: 100%;
+    border-bottom: none;
+}

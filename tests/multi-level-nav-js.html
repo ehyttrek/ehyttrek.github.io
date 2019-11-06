@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dropdown Menü 1</title>
+
+        <style>
+            /*Original styles: Oliver Gast   */
+
+            /** Schritt 1 **/
+
+            nav {
+                box-sizing: border-box;
+                float: left;
+                width: 100%;
+                background: #3a3a3a;
+                font-size: 16px;
+            }
+
+            /** Schritt 2 **/
+
+            nav ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            nav a {
+                display: block;
+                color: #fff;
+                text-decoration: none;
+            }
+
+            /** Schritt 3 **/
+
+            nav ul li {
+                position: relative;
+                float: left;
+                list-style: none;
+            }
+
+            nav ul li:hover {
+                background: #4096ee;
+            }
+
+            nav ul li a {
+                padding: 20px;
+            }
+
+            /** Schritt 4 **/
+
+            nav ul ul {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+                background: #333;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+            }
+
+            nav ul ul li {
+                float: none;
+                width: 200px;
+                border-bottom: 1px solid #555;
+            }
+
+            nav ul ul li a {
+                padding: 10px 20px;
+            }
+            
+            /** Schritt 5 **/       
+            
+            nav ul li:hover > ul {
+  top: 100%;
+  left: 0;
+}
+            
+                        /** Schritt 6 **/  
+            
+            nav ul ul li:hover > ul {
+  top: 0;
+  left: 200px;
+}
+
+            /* Overrides: Enno Hyttrek */
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Dropdown Menü, Variante 1</h1>
+            <p>
+                Quelle:
+                <a
+                    href="http://www.olivergast.de/blog/2015/05/12/css-ein-horizontales-dropdown-menue-reloaded/"
+                    >www.olivergast.de/blog/2015/05/12/css-ein-horizontales-dropdown-menue-reloaded/</a
+                >
+            </p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#" title="Nach Hause">Home</a></li>
+                <li class="submenu">
+                    <a href="#" title="Unser Produktsortiment">Produkte</a>
+                    <ul>
+                        <li class="submenu">
+                            <a href="#" title="Unser Obstsortiment">Obst</a>
+                            <ul>
+                                <li>
+                                    <a href="#" title="Unsere Ananasauswahl"
+                                        >Ananas</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" title="Unsere Apfelauswahl"
+                                        >Äpfel</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" title="Unsere Birnenauswahl"
+                                        >Birnen</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" title="Unsere Bananenauswahl"
+                                        >Bananen</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="submenu">
+                            <a href="#" title="Unser Gemüse">Gemüse</a>
+                            <ul>
+                                <li>
+                                    <a href="#" title="Unsere Kartoffelauswahl"
+                                        >Kartoffeln</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#" title="Unsere Salatauswahl"
+                                        >Salat</a
+                                    >
+                                </li>
+                                <li class="submenu">
+                                    <a href="#" title="Unser Rübensortiment"
+                                        >Rüben</a
+                                    >
+                                    <ul>
+                                        <li class="submenu">
+                                            <a href="#" title="Unsere Mohrrüben"
+                                                >Mohrrüben</a
+                                            >
+                                            <ul>
+                                                <li>
+                                                    <a
+                                                        href="#"
+                                                        title="frisch vom Feld"
+                                                        >frisch</a
+                                                    >
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="#"
+                                                        title="aus dem Lager"
+                                                        >nicht so frisch</a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                title="Unsere Steckrüben"
+                                                >Steckrüben</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#" title="Das sind wir">Über uns</a></li>
+                <li><a href="#" title="So erreichen Sie uns">Kontakt</a></li>
+                <li><a href="#" title="Rechtliches">Impressum</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

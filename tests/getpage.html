@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Parameter und Werte aus QueryString übernehmen</title>
+<meta charset="utf-8">
+<style type="text/css">
+body{text-align:center} .liste{text-align:left} .dvl{width:300px; margin:auto} .gtsp {color:#8E9583}
+</style>
+<script type="text/javascript">
+
+var rabe, kate, rubi, item, para;
+
+/* --- Empfang und Zuordnung der Parameterwerte zu den Variablen -- */
+
+function getEmpfang() {
+
+    if (window.location.search != "") {
+        var eingng = decodeURIComponent(window.location.search.substring(0,120));
+        var muster = /[^a-zäöüÄÖÜß0-9+_&=-]/gi;
+        var einget = eingng.replace(muster, "");
+        var getspl = einget.split("&");
+        var gzaehl = getspl.length;
+
+        for (var i = 0; i < gzaehl; i++) {
+
+            var getnw = getspl[i].split("=");
+
+            getnw[0] == "rabe" ? rabe = getnw[1] : false;
+            getnw[0] == "kate" ? kate = getnw[1] : false;
+            getnw[0] == "rubi" ? rubi = getnw[1] : false;
+            getnw[0] == "item" ? item = getnw[1] : false;
+            getnw[0] == "para" ? para = getnw[1] : false;
+        }
+    }
+}
+
+/* --------------------------------------------------------------------
+ Prüfen, welche Parameter übergeben wurden und welche Variablen mit
+ einem Wert belegt sind.
+-----------------------------------------------------------------------
+*/
+function getPruefung() {
+
+    getEmpfang();              // Aufruf von getEmpfang
+
+    rabe = pruefeGet(rabe);
+    kate = pruefeGet(kate);
+    rubi = pruefeGet(rubi);
+    item = pruefeGet(item);
+    para = pruefeGet(para)
+
+    function pruefeGet(gt) {
+
+        if (typeof(gt) !== "undefined" && gt != "") {
+            gt = gt.replace(/[+]/g, " ");
+        }
+        else {
+            gt = "<span class=\"gtsp\">No Wert<\/span>";
+        }
+        return gt;
+    }
+}
+
+/* --- Aufbereitung zur Ausgabe bei onload ------------------------- */
+
+window.onload = function() {
+
+    getPruefung();             // Aufruf von getPruefung
+
+    var lis = "<\/li><li>";
+    var rep = "<li>" + rabe + lis + kate + lis + rubi + lis + item + lis + para + "<\/li>";
+
+    document.getElementById("ausgabe").innerHTML = rep;
+}
+</script>
+</head>
+
+<body>
+<h1>Parameter und Werte aus QueryString übernehmen</h1>
+<p><a href="formpage.html">Formular</a> | <a href="getpage.html">Eingangsseite</a></p>
+<p>Es wurden folgende Datenwerte übergeben:</p>
+<div class="dvl"><ul id="ausgabe" class="liste"></ul></div>
+</body>
+</html>

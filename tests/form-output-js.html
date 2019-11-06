@@ -1,0 +1,17 @@
+<html>
+<form name="eingabe" onsubmit="return schreiben();">
+<input type="text" name="zeile">
+<input type="submit">
+</form>
+<script language="javascript">
+function schreiben(){
+ var fso,datei;
+ fso=new ActiveXObject("Scripting.FileSystemObject");
+ datei=fso.OpenTextFile("formulartext.txt",2,true);
+ datei.WriteLine(document.eingabe.zeile.value);
+ datei.Close();
+ document.eingabe.zeile.value="";
+ return false;
+}
+</script>
+</html>

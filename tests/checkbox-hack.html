@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkbox Hack</title>
+
+        <style>
+            /*www.olivergast.de/blog/2013/04/16/css3-der-checkbox-hack/*/
+
+            .checkbox {
+                position: relative;
+                margin-bottom: 1em;
+            }
+
+            input[type="checkbox"] {
+                display: none;
+            }
+            
+            input[type=checkbox]:checked ~ p {
+     display: block;
+}
+
+            label {
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+            }
+            
+            p {
+                display: none;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="checkbox">
+            <input type="checkbox" id="name" />
+            <label for="name">Mein Name</label>
+            <p>Mein Name ist Olli</p>
+        </div>
+
+        <div class="checkbox">
+            <input type="checkbox" id="ich" />
+            <label for="ich">Das bin ich</label>
+            <p>
+                Olli ist 37 Jahre alt und wohnt in einer kleinen Gemeinde Namens
+                Kirchdorf, im Herzen Niedersachsens. Er ist hauptberuflich
+                Verwaltungsfachwirt und übt seinen Beruf derzeit hauptsächlich
+                als IT-Systembetreuer aus. In seiner Freizeit ist er
+                Konsolen-Gamer, Musikliebhaber sowie Film- und Serienfan. Immer
+                mal wieder versucht er sich - mit zweifelhaftem Erfolg - an
+                Projekten im Grafik- und Webdesign.
+            </p>
+        </div>
+    </body>
+</html>

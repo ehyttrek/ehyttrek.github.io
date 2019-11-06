@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Background Slideshows</title>
+
+        <style>
+            section {
+                width: 50vw;
+                height: 30vw;
+                margin: 0 auto;
+                background-size: cover;
+            }
+
+            .image01 {
+                background-image: url(img/beach-84533_1280.jpg);
+            }
+
+            .image02 {
+                background-image: url(img/font-705665_1280.jpg);
+            }
+
+            .image03 {
+                background-image: url(img/water-lily-4410471_1280.jpg);
+            }
+        </style>
+
+        <script>
+            
+            function mySlideShow() {
+            var i = 1;
+            while (i < 4) {
+                document.getElementById("slideshow-container-01").className = "image0" + i;
+                i++;
+                setTimeout(toggleBackground, 3000);
+            }
+            }
+
+
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Background Slideshows</h1>
+            <p>
+                Just fooling around with some thoughts, both using just CSS and
+                JS.
+            </p>
+        </header>
+        <h2>Version 1</h2>
+        <button onclick="toggleBackground()">Go!</button>
+        <section id="slideshow-container-01" class="image01"></section>
+    </body>
+</html>

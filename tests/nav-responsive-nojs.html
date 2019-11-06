@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Responsive Nav without JS</title>
+
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        />
+
+        <style>
+             /*
+            Reset
+            */
+            
+            * {
+                margin: 0;                
+                padding: 0;
+                box-sizing: border-box;
+            }
+                           
+                        input[type="checkbox"] {
+                display: none;
+            }
+            
+            /*
+            General layout
+            */
+            
+            .nav-wrapper {
+                height: 80vh;           
+            }
+            
+            footer {
+                height: 20vh;
+            }
+            
+            p,
+            .hamburg i {
+                                 padding: 20px;           
+            }
+            
+            /*
+            Style the HH icon
+            */
+            
+            .hamburg {
+
+            }
+                        .hamburg i {
+                font-size: 2.5em;
+                            cursor: pointer;
+
+            }
+            
+            
+
+            
+            /*
+            Main nav general style
+            */
+            
+            nav.main-nav ul {
+                list-style-type: none;
+
+            }
+            
+            nav.main-nav ul li a {
+                text-decoration: none;
+                background-color: rgba(50,60,70,0.8);
+                color: #fff;
+            }
+            
+            /*
+            Style the main nav for mobile
+            */
+
+            
+           nav.main-nav {
+                height: 0;
+                overflow: hidden;
+            }
+            
+            nav.main-nav ul li a {
+                display: block;
+                font-size: 2em;
+                padding: 20px;
+                margin-bottom: 2px;
+            }
+
+            
+            /*
+            'Pseudo onclick' for HH icon ('The Checkbox Hack')
+            */         
+            #hamburg:checked + .hamburg + nav.main-nav {
+                height: auto;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="nav-wrapper">
+            <input type="checkbox" id="hamburg" />
+            <label for="hamburg" class="hamburg">
+                <i class="fas fa-bars"></i>
+            </label>
+            
+
+                            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">Menu Item</a></li>
+                    <li><a href="#">Menu Item</a></li>
+                    <li><a href="#">Menu Item</a></li>
+                    <li><a href="#">Menu Item</a></li>
+                    <li><a href="#">Menu Item</a></li>
+                </ul>
+            </nav>
+            
+
+
+
+        </div>
+        
+                    <footer>
+                        <p>
+            Dieses Mobilmenü funktioniert ohne JavaScript mithilfe des sog. "Checkbox Hacks". Dieser wird im Zusammenhang mit diversen Navigationslösungen hier bei <a href="https://wiki.selfhtml.org/wiki/CSS/Tutorials/Men%C3%BCs_und_mehr_mit_dem_Checkbox-Hack" target="_blank">SelfHTML diskutiert. </a>
+                            </p>
+            </footer>
+    </body>
+</html>

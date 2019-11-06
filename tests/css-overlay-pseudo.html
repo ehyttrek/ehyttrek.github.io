@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Overlay with Pseudo Element</title>
+    </head>
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .banner,
+        .banner::after {
+                 height: 50vh;           
+        }
+        
+        .banner-container {
+            position: relative;
+
+        }
+        
+        .banner {
+            
+            background-color: rgba(255,128,0,0.5);
+            z-index: 100;
+        }
+
+        .banner::after {
+            z-index: -1;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+            opacity: 0.7;
+        }
+    </style>
+    <body>
+        <div class="banner-container">
+            <section class="banner">
+                <h1>Hello World</h1>
+            </section>
+        </div>
+    </body>
+</html>
