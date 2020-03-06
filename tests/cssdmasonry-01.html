@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Masonry 01</title>
+
+        <style>
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .masonry {
+                /* Masonry container */
+                column-count: 4;
+                column-gap: 0;
+            }
+
+            .item {
+                /* Masonry bricks or child elements */
+                display: inline-block;
+                width: 100%;
+                min-height: 25vw;
+                border: 1px solid #000;
+            }
+            
+            .item:nth-child(odd) {
+                background-color: orange;
+            }
+            
+                        .item:nth-child(even) {
+                background-color: red;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="masonry">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </body>
+</html>

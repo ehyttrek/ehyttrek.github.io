@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Grid 1</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .grid-container {
+                display: grid;
+                  grid-template-columns: auto auto auto;
+            }
+
+            .grid-item {
+                color: #fff;
+                text-align: center;
+            }
+
+            .grid-item:nth-child(odd) {
+                background-color: rgb(200, 200, 200);
+            }
+
+            .grid-item:nth-child(even) {
+                background-color: rgb(100, 100, 100);
+            }
+
+            
+                        .type01 {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+            
+            .type02 {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="grid-item type01">1</div>
+            <div class="grid-item type01">2</div>
+            <div class="grid-item type01">3</div>
+            <div class="grid-item type01">4</div>
+            <div class="grid-item type01">5</div>
+            <div class="grid-item type01">6</div>
+            <div class="grid-item type01">7</div>
+            <div class="grid-item type01">8</div>
+            <div class="grid-item type01">9</div>
+        </div>
+    </body>
+</html>

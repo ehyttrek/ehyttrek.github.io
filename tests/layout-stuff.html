@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout Stuff</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+        
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Roboto', sans-serif;
+            }
+            
+            section {
+                width: 20em;
+                margin: 0 auto;
+                background-color: rgb(210,220,230);
+                padding: 0.5em;
+            }
+            
+            h1 {
+               font-size: 2em;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            
+            .my-flex {
+                display: flex;
+                flex-direction: row;
+            }
+            
+            .my-line {
+                border-top: 3px solid #000;
+                flex-basis: auto;
+    
+            }
+            
+            h2 {
+   
+            }
+        
+        
+        </style>
+        
+    </head>
+    <body>
+        <section class="layout-stuff-1">
+            <h1>I am the headline</h1>
+            <div class="my-flex">
+                <div class="my-line"></div>
+                <h2>I am the big star</h2>
+            </div>
+            <!--.my-flex-->
+            <h3>I am the date</h3>
+        </section>
+    </body>
+</html>

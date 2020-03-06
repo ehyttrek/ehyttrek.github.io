@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>A Simple Carousel</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .my-slideshow {
+                position: relative;
+                overflow: hidden;
+                width: 80vw;
+                margin: 0 auto;
+                padding-top: 5vw;
+                height: 50vw;
+            }
+
+            .my-slider {
+                position: absolute;
+                display: flex;
+                width: 400%;
+                height: 50vw;
+            }
+
+            .my-slider div:nth-child(1),
+            .my-slider div:nth-child(4) {
+                width: 25%;
+                color: #fff;
+                background-color: red;
+            }
+
+            .my-slider div:nth-child(2) {
+                background-color: green;
+            }
+
+            .my-slider div:nth-child(3) {
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="my-slideshow">
+            <div class="my-slider">
+                <div>Slide #1</div>
+                <div>Slide #2</div>
+                <div>Slide #3</div>
+                <div>Slide #1</div>
+            </div>
+        </div>
+    </body>
+</html>
