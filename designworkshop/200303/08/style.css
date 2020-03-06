@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/*font-family: 'Roboto', sans-serif;*/
+    
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+/*font-family: 'Indie Flower', cursive;*/
+
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+/*font-family: 'Pacifico', cursive;*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Lacquer&display=swap');
+/*font-family: 'Lacquer', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-image: url(image/carson.jpg);
+  background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px    
+  
+}
+
+
+.p-1{
+    border: solid;
+    background-color: yellow;
+    font-family: 'Lacquer', sans-serif;
+    font-weight: bold;
+}
+

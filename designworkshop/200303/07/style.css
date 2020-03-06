@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kranky&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    @import url(http://allfont.net/allfont.css?fonts=arcadia);
+}
+header {
+    background-image: url(image.jpg);
+    background-repeat: round; 
+    padding: 50px;
+    text-align: center;
+    font-size: 1.5em;
+}
+h1{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    
+}
+section{
+    background-image: url(pic1.jpg);
+}
+
+.start {
+  font-family: 'Aclonica';font-size: 22px;
+}
+h2{
+    background-color:chartreuse;
+    border: 1px solid brown;
+    text-decoration: underline;
+   text-decoration-color: crimson;
+}
+.first{
+    font-family: 'Kranky', cursive;
+    color: crimson;
+    font-size: 30px;
+  
+}
+.second{
+    font-family: 'Monoton', cursive;
+    color:blue;
+}
+.third{
+    font-family: monospace;
+}

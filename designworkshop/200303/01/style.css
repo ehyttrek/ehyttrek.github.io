@@ -1,0 +1,241 @@
+*{
+    box-sizing: border-box
+}
+html{
+    scroll-behavior: smooth;
+}
+/*style of header*/
+header{
+    justify-content: left;
+    padding:2rem;
+    margin-bottom: 2rem;
+
+    background-color: black;
+}
+h1{
+    color:floralwhite;
+    margin:0;
+    padding:0;
+}
+#vignelli{
+    font-family: "Roboto", sans-serif;
+}
+
+#brody{
+    font-family: "ArchivoBlack", sans-serif;
+}
+h1#brody span:nth-child(1){
+    color: yellow;
+}
+h1#brody span:nth-child(2){
+    color: limegreen;
+}
+h1#brody span:nth-child(3){
+    color: gainsboro;
+}
+h1#brody span:nth-child(4){
+    color: skyblue;
+}
+h1#brody span:nth-child(5){
+    color: palevioletred;
+}
+h1#brody span:nth-child(6){
+    color: red;
+}
+
+#carson{
+    font-family: "Poiret One", sans-serif;
+}
+h1#carson span:nth-child(1){
+    font-family: "Poiret One";
+    font-size: 2rem;
+}
+h1#carson span:nth-child(2){
+    font-family: "Special Elite";
+    font-size: 3rem;
+}
+h1#carson span:nth-child(3){
+    font-family: "Lobster Two";
+}
+h1#carson span:nth-child(4){
+    font-family: "Lobster Two";
+}
+h1#carson span:nth-child(5){
+    font-family: "Lobster Two";
+}
+h1#carson span:nth-child(6){
+    font-family: "Lobster Two";
+}
+h1#carson span:nth-child(7){
+    font-family: "Lobster Two";
+    color:aquamarine;
+    font-size: 2rem;
+}
+/*import fonts*/
+@font-face{
+    font-family: "ArchivoBlack";
+    src: url(fonts/ArchivoBlack/ArchivoBlack-Regular.ttf);
+}
+/*style of articles*/
+main{
+    padding: 0rem 2rem;
+}
+img{
+    padding:1rem;
+}
+/*style of vignelli*/
+.vignelli{
+    font-family: "Roboto", sans-serif;
+    padding: 0rem 2rem 1rem 2rem;
+    line-height: 1.5rem;
+    text-align: justify;
+    border-bottom: 2px solid black;
+}
+/*style of brody*/
+.brody{
+    font-family: "ArchivoBlack", sans-serif;
+    font-weight: bolder;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    background-color:black;
+}
+/*style of brody*/
+#brody-h2{
+    color: whitesmoke;
+}
+p span:nth-child(1){
+    color: yellow;
+}
+p span:nth-child(2){
+    color: limegreen;
+}
+p span:nth-child(3){
+    color: gainsboro;
+}
+p span:nth-child(4){
+    color: skyblue;
+}
+p span:nth-child(5){
+    color: palevioletred;
+}
+p span:nth-child(6){
+    color: red;
+}
+p span:nth-child(7){
+    color: lightcoral;
+}
+p span:nth-child(8){
+    color: mediumpurple;
+}
+p span:nth-child(9){
+    color: lawngreen;
+}
+p span:nth-child(10){
+    color: deeppink;
+}
+p span:nth-child(11){
+    color: yellow;
+}
+#brody-capital{
+    color: palegreen;
+}
+#brody-small{
+    color: ghostwhite;
+}
+/*style of carson*/
+.carson{
+    font-family: "Poiret", sans-serif;
+    padding: 0rem 2rem;
+    background-image: url();
+    background-repeat: no-repeat;
+    position: relative;   
+}
+article.carson p{
+    position: absolute;
+}
+article.carson p:nth-child(2){
+    font-family: "Special Elite";
+    line-height: 2rem;
+    height: 20vw;
+    right: 15vw;
+}
+
+article.carson p:nth-child(3){
+    font-weight: 700;
+    font-size: 2rem;
+    color: lawngreen;
+    opacity: 0.7;
+    z-index: 10;
+    left: 7vw;
+    margin-top:10rem;
+}
+article.carson p:nth-child(4){
+    font-family: "Lobster Two";
+    color: hotpink;
+    opacity: 0.8;
+    margin-top: 10rem;
+    font-size: 1.3rem;
+}
+article.carson p:nth-child(5){
+    font-family: "Special Elite";
+    opacity: 0.8;
+    font-size:4rem;
+    font-weight: 900;
+    margin-top:7rem;
+}
+article.carson p:nth-child(6){
+    font-family: "special Elite";
+    opacity: 0.5;
+    font-size:5rem;
+    font-weight: 900;
+    margin-top:5rem;
+    left:20vw;
+}
+article.carson p:nth-child(7){
+    font-family: "special Elite";
+    color: lawngreen;
+    opacity: 0.5;
+    font-size:4rem;
+    font-weight: 900;
+    margin-top:0;
+    left:75vw;
+}
+article.carson p:nth-child(8){
+    font-family: "special Elite";
+    color: hotpink;
+    opacity: 0.5;
+    font-size:4rem;
+    font-weight: 900;
+    margin-top:17rem;
+    left:55vw;
+}
+article.carson p:nth-child(9){
+    font-family: "special Elite";
+    color: lawngreen;
+    opacity: 0.5;
+    font-size:4rem;
+    font-weight: 900;
+    margin-top:0;
+    left:75vw;
+}
+article.carson p:nth-child(10){
+    font-family: "special Elite";
+    color: yellow;
+    opacity: 0.5;
+    font-size:4rem;
+    font-weight: 900;
+    margin-top:0;
+    left:0vw;
+}
+#carson-h2{
+    background-color: crimson;
+    font-family: "Monoton";
+}
+
+/*style of footer*/
+/*
+footer{
+    background-color: black;
+    height: 3rem;
+}
+*/

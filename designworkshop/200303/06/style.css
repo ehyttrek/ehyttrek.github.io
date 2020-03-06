@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800i|Oxanium:700|Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Oxanium:700&display=swap');
+/*
+font-family: 'Roboto', sans-serif;
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800i|Oxanium:700|Roboto|Rock+Salt&display=swap');
+
+/*
+font-family: 'Rock Salt', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i&display=swap');
+--/*
+font-family: 'Arvo', serif;
+*/---
+
+@import url('https://fonts.googleapis.com/css?family=Changa:200,300,400,500,600,700,800&display=swap&subset=arabic,latin-ext');
+/*
+    font-family: 'Changa', sans-serif;
+*/
+
+* {
+    margin: 0px;#
+    padding:0px;
+    box-sizing: border-box; 
+}
+
+html {
+    scroll-behavior: smooth;
+    line-height: 1.3;
+    background-image:url(images/bg_image.jpg);
+    background-repeat: repeat;
+}
+
+.p-1 { 
+    font-family: 'Arvo', serif;
+    font-size: 400;
+  
+}
+
+  .p-2{
+      font-family: 'Roboto', sans-serif;
+           
+}
+
+.p-3{
+    display: block;
+    border: solid;
+    background-color: aquamarine;
+    font-family: 'Rock Salt', cursive;
+    
+}
+
+.span1{
+    display: inline;
+    font-size: 3rem;
+}
+
+.span-2{
+    
+    font-family: 'Changa', sans-serif;
+    font-weight: 700;
+    
+
+}
+
+body  {
+    
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 80px;
+  background-color: #f1f1f1;
+
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 80px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
+    padding: 60px;
+}
+
+.img-1{
+    display:block;margin:0 auto;
+}
+
+.section-1{
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-color:  #cb8fb0;
+    opacity: 0.7;
+
+}
+
+.section-2{
+    background-color: cadetblue;
+    padding:40px;
+    border: 3px;
+    opacity: 0.7;
+}
