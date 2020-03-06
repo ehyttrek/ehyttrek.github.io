@@ -2,74 +2,108 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>Example Title</title>
+        <title>DesignWorkshop 200303</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap" rel="stylesheet">
-        
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,700&display=swap"
+            rel="stylesheet"
+        />
+
         <style>
-            
             * {
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
             }
-            
+
             a,
-            body{
-                          color: rgb(220,230,240);
+            body {
+                color: rgb(220, 230, 240);
             }
-            
-            
+
             a {
                 text-decoration: none;
             }
             a:hover {
-                color: rgb(255,128,0);
+                color: rgb(255, 128, 0);
             }
             
-            body {
-                font-family: 'Roboto', sans-serif;
-                background-color: rgb(50,60,70);
+            header p{
+                padding-bottom: 1em;
+            } 
+            
+            header p a {
+                text-decoration: underline;
+            }
+            
+                        header p a:hover {
+                text-decoration: none;
+            }
 
+            body {
+                font-family: "Roboto", sans-serif;
+                background-color: rgb(50, 60, 70);
             }
-            
+
             h1,
             p {
                 padding: 0.5rem;
             }
-            
-            footer p {
-                font-size: 0.8em;
-            }
-        
-            main {
 
+           p {
+                font-size: 1.3em;
+               line-height: 1.3;
+            }
+
+            header {
+                padding-bottom: 1rem;
+            }
+
+            main {
                 display: flex;
                 flex-wrap: wrap;
             }
-            
+
             main a {
                 display: block;
-                width: 25%;
+                width: 100%;
             }
-            
+
             main a img {
                 width: 100%;
                 height: auto;
             }
-            
+
             footer {
                 padding-top: 2rem;
-                                padding-bottom: 2rem;
+                padding-bottom: 2rem;
             }
-        
-        
+
+            @media only screen and (min-width: 600px) {
+                main a {
+                    width: 25%;
+                }
+                
+                footer p {
+                font-size: 0.8em;
+            }
+            }
         </style>
     </head>
 
     <body>
         <header>
             <h1>DesignWorkshop March 3, 2020</h1>
+            <p>
+                The pages linked on this page are results from a design workshop
+                for students who are about to study web development, conducted
+                for a teaching program of one of my clients. Task was to create
+                a HTML type specimen based on some famous graphic designers and
+                typographers introduced to the group in the workshop. Time to
+                work on the task was one day. For more information please
+                <a href="mailto:studio@hyttrek.com">inquire by eMail</a>.
+            </p>
+            <p>Enno Hyttrek, March 2020</p>
         </header>
         <main>
             <a href="01/index.html"><img src="img/01.jpg"/></a>
@@ -85,8 +119,13 @@
             <a href="11/index.html"><img src="img/11.jpg"/></a>
         </main>
         <footer>
-        <p>The pages linked on this page are results from a design workshop for students who are about to study web development, conducted for a teaching program of one of my clients. Task was to create a HTML type specimen based on some famous graphic designers and typographers introduced to the group in the workshop. Time to work on the task was one day. For more information please inquire by eMail.</p>
-           <p>Enno Hyttrek, 2020 | <a href="http://enno.hyttrek.com" target="_blank">enno.hyttrek.com</a> | <a href="mailto:studio@hyttrek.com">studio@hyttrek.com</a></p>
+            <p>
+                
+                <a href="http://enno.hyttrek.com" target="_blank"
+                    >enno.hyttrek.com</a
+                >
+                | <a href="mailto:studio@hyttrek.com">studio@hyttrek.com</a>
+            </p>
         </footer>
     </body>
 </html>
