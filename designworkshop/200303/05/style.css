@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    line-height: 2;
+    font-family: 'Roboto Mono', monospace;
+}
+h1 {
+    font-size: 3rem;
+}
+.wrapper {
+    padding-left: 70vw;
+    padding-right: 9.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1,5rem;
+    height: 100px;
+}
+.nav-links {
+    display: flex;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+}
+a:hover {
+    color: gray;
+}
+blockquote {
+    padding-top: 150px; 
+    padding-left: 50px;
+}
+section {
+    margin-left: 100px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+.header {
+    height: 300px;
+}
+.background-1 {
+    height: 300px;
+    background-color: lavender;
+    background-image: url(images/vignelli.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.background-2 {
+    height: 300px;
+    background-color: lavender;
+    background-image: url(images/brody.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.background-3 {
+    height: 300px;
+    background-color: lavender;
+    background-image: url(images/carson.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bottom-line {
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+}
+.copyright {
+    margin-bottom: 10px;
+}
+#vignelli {
+    font-family: 'Roboto', sans-serif;
+}
+path {
+    fill: transparent;
+  }
+  
+text {
+fill: black;
+font-size: 2rem;
+letter-spacing: 10px;
+}
+
+#brody {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+#carson {
+    font-family: 'Dokdo', cursive;
+}
+
+.top-container-1 {
+    position: relative;
+    width: 500px;
+}
+.top-container-2 {
+    position: relative;
+    padding-left: 500px;
+}
+.middle-container-1 {
+    position: relative;
+    width: 500px;
+}
+.middle-container-2 {
+    position: relative;
+    padding-left: 500px;
+}
+.bottom-container-1 {
+    position: relative;
+    width: 1200px;
+    letter-spacing: 70px;
+}
+.bottom-container-2 {
+    position: relative;
+    padding-left: 500px;
+}
+hr {
+    border: solid black 7px;
+    border-bottom: none;
+    width: 10%;
+    margin-left: 0;
+}

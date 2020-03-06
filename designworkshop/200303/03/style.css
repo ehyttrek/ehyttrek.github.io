@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html
+{
+background-color: lightgray;
+}
+.massimo
+{
+color:darkorange;
+font-family: 'roboto-mono', monospace;
+font-size: 60px;
+letter-spacing: 20px;
+}
+h2
+{
+color: red;
+font-family: 'roboto condensed', sans-serif;
+}
+p
+{
+color: black;
+font-family: 'roboto', sans-serif;
+}
+.img
+{
+width: 400px;
+height: 300px;
+}
+header
+{
+    background-image: url(images/typography-brings-life-personality-web-design1.png);
+    background-repeat: no-repeat;
+    height: 50vh;    
+    background-size: cover;
+    background-position: center;    
+}
+.quotes
+{
+width: 400px;
+height: 400px;
+}
+.carson first-letter
+{
+font-weight: 800;    
+}
+h1 span:nth-child(2)
+{
+font-size: 4em;    
+}
+@import url('https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Khmer|Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barriecito|Fontdiner+Swanky|Khmer|Slackey&display=swap');
+.neville
+{
+font-family: 'Nosifer', sans-serif;
+font-weight: bold;
+text-decoration: underline;
+font-size: 80px;
+color: dodgerblue;
+background-color: black;
+}
+.carson
+{
+color: dodgerblue;
+font-weight: 900; 
+font-size: 80px;
+font-family: 'khmer', fantasy;
+background-color: black;
+}
+p
+{
+font-family: 'Barriecito', cursive;
+}
+
+
+
+
+
+
