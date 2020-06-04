@@ -1,0 +1,95 @@
+/*--------------------
+Stylesheet for Fibonacci
+--------------------*/
+:root {
+  --unit: calc(100/13);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 1em;
+}
+
+body,
+.module {
+    background-color: rgb(180,190,200);    
+}
+
+.module {
+
+    border: 1px solid #fff;
+}
+
+.module p {
+width: 80%;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+.module-1 {
+    width: calc(1vw * var(--unit));
+    height: calc(1vw * var(--unit));
+}
+
+.module-2 {
+    width: calc(2vw * var(--unit));
+    height: calc(2vw * var(--unit));
+}
+
+.module-3 {
+    width: calc(3vw * var(--unit));
+    height: calc(3vw * var(--unit));
+}
+
+.module-5 {
+    width: calc(5vw * var(--unit));
+    height: calc(5vw * var(--unit));
+}
+
+.module-8 {
+    width: calc(8vw * var(--unit));
+    height: calc(8vw * var(--unit));
+}
+
+.module-13 {
+    width: calc(13vw * var(--unit));
+    height: calc(13vw * var(--unit));
+}
+
+
+.wrapper-1,
+.wrapper-3,
+.wrapper-8 {
+    display: flex;
+}
+
+@media only screen and (min-width: 600px) {
+    
+    :root {
+  --unit: calc(100/21);
+}
+    
+    body {
+    font-size: 2vw;
+}
+
+.wrapper-2,
+.wrapper-5,
+.wrapper-13 {
+    display: flex;
+}
+    
+    .wrapper-1,
+.wrapper-3,
+.wrapper-8 {
+    display: block;
+}
+    
+    }
