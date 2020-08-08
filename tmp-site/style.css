@@ -4,6 +4,51 @@ Static site
 Contact: studio@hyttrek.com
 © 2020 Enno Hyttrek
 ---------------------*/
+/*---------------------
+IMPORT & SOURCES
+---------------------*/
+@font-face {
+    font-family: "My Clear Sans";
+    font-style: normal;
+    font-weight: 100;
+    src: url("../fonts/woff2-convert/ClearSans-Thin.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "My Clear Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/woff2-convert/ClearSans-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "My Clear Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/woff2-convert/ClearSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "My Clear Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/woff2-convert/ClearSans-Italic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "My Clear Sans";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/woff2-convert/ClearSans-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "My Clear Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/woff2-convert/ClearSans-Bold.woff2") format("woff2");
+}
+
 
 /*---------------------
 RESET
@@ -196,47 +241,6 @@ STYLE Article Headers
 TYPOGRAPHY
 ---------------------*/
 
-@font-face {
-    font-family: "My Clear Sans";
-    font-style: normal;
-    font-weight: 100;
-    src: url("../fonts/woff2-convert/ClearSans-Thin.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "My Clear Sans";
-    font-style: normal;
-    font-weight: 300;
-    src: url("../fonts/woff2-convert/ClearSans-Light.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "My Clear Sans";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../fonts/woff2-convert/ClearSans-Regular.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "My Clear Sans";
-    font-style: italic;
-    font-weight: 400;
-    src: url("../fonts/woff2-convert/ClearSans-Italic.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "My Clear Sans";
-    font-style: normal;
-    font-weight: 500;
-    src: url("../fonts/woff2-convert/ClearSans-Medium.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "My Clear Sans";
-    font-style: normal;
-    font-weight: 700;
-    src: url("../fonts/woff2-convert/ClearSans-Bold.woff2") format("woff2");
-}
 
 body {
     font-family: "My Clear Sans";
