@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fibonacci Grid</title>
+
+    <style>
+        :root {
+            --mod-01: calc((100vw/8)*1);
+            --mod-02: calc((100vw/8)*2);
+            --mod-03: calc((100vw/8)*3);
+            --mod-04: calc((100vw/8)*5);
+            --mod-05: calc((100vw/8)*6);
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            position: relative;
+            width: 100vw;
+            height 100vh;
+            z-index: 100;
+        }
+
+
+
+        section .art {
+            position: absolute;
+            width: 20vw;
+            height: 20vw;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            font-size: 2em;
+            opacity: 0.6;
+        }
+
+
+        .sec-05 .art-01 {
+            top: 0;
+            left: 0;
+            width: var(--mod-01);
+            height: var(--mod-01);
+        }
+
+        .sec-05 .art-02 {
+            top: var(--mod-01);
+            left: 0;
+            width: var(--mod-01);
+            height: var(--mod-01);
+        }
+
+        .sec-05 .art-03 {
+            top: 0;
+            left: var(--mod-01);
+            width: var(--mod-02);
+            height: var(--mod-02);
+        }
+
+        .sec-05 .art-04 {
+            top: var(--mod-02);
+            left: 0;
+            width: var(--mod-03);
+            height: var(--mod-03);
+        }
+
+        .sec-05 .art-05 {
+            top: 0;
+            left: var(--mod-03);
+            width: var(--mod-04);
+            height: var(--mod-04);
+        }
+
+        /*-------------*/
+
+        .sec-01 .art-01 {
+            top: 0;
+            left: 0;
+            width: var(--mod-04);
+            height: var(--mod-04);
+        }
+
+        .sec-01 .art-02 {
+            top: 0;
+            left: var(--mod-04);
+            width: var(--mod-01);
+            height: var(--mod-01);
+        }
+
+        .sec-01 .art-03 {
+            top: 0;
+            left: var(--mod-05);
+            width: var(--mod-02);
+            height: var(--mod-02);
+        }
+
+        .sec-01 .art-04 {
+            top: var(--mod-01);
+            left: var(--mod-04);
+            width: var(--mod-01);
+            height: var(--mod-01);
+        }
+
+        .sec-01 .art-05 {
+            top: var(--mod-02);
+            left: var(--mod-04);
+            width: var(--mod-03);
+            height: var(--mod-03);
+        }
+    </style>
+
+    <script>
+        function toggleGrid(y) {
+            var x = document.getElementById('sec');
+            if (y.className === 'small') {
+                x.className = 'large';
+            } else {
+                x.className = 'small';
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <section id="sec" class="sec-05">
+        <article class="art art-01">
+            <p>1</p>
+        </article>
+        <article class="art art-02">
+            <p>2</p>
+        </article>
+        <article class="art art-03">
+            <p>3</p>
+        </article>
+        <article class="art art-04">
+            <p>4</p>
+        </article>
+        <article class="art art-05">
+            <p>5</p>
+        </article>
+    </section>
+
+</body></html>

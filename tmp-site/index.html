@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Enno Hyttrek . Designer . Dozent</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="favicon.png" />
+
+        <script>
+            var minHeight = 50;
+            var maxHeight = 100;
+
+            function toggleMobileNav() {
+                var x = document.getElementById("mobile-nav");
+                if (x.style.height === maxHeight + "vh") {
+                    x.style.height = minHeight + "px";
+                } else {
+                    x.style.height = maxHeight + "vh";
+                }
+            }
+            
+                    function hideMobileNav() {
+        document.getElementById('mobile-nav').style.height=minHeight + "px" }
+        </script>
+
+
+    </head>
+
+    <body>
+        <header id="main-header" class="main-header">
+            <h1>
+                <span>Enno Hyttrek</span> <span>.</span> <span>Designer</span>
+                <span>.</span> <span>Dozent</span>
+            </h1>
+        </header>
+        <nav id="main-nav" class="main-nav">
+            <ul>
+                <li><a href="#">Enno Hyttrek</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Lehre</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <nav id="mobile-nav" class="mobile-nav">
+            <div id="burger-icon" onclick="toggleMobileNav()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <ul>
+                <li><a href="#">Kurzprofil</a></li>
+                <li>
+                    <a href="#communication-design" onclick="hideMobileNav()">Kommunikationsdesign</a>
+                </li>
+                <li><a href="#graphic-design" onclick="hideMobileNav()">Grafikdesign</a></li>
+                <li><a href="#identity-design" onclick="hideMobileNav()">Identity Design</a></li>
+                <li><a href="#interface-design" onclick="hideMobileNav()">Interface</a></li>
+                <li><a href="#online-design" onclick="hideMobileNav()">Online</a></li>
+                <li><a href="#space-design" onclick="hideMobileNav()">Space Design</a></li>
+                <li><a href="#teaching" onclick="hideMobileNav()">Lehre und Forschung</a></li>
+                <li><a href="#contact" onclick="hideMobileNav()">Kontakt</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <h3>Kurzprofil</h3>
+                <p>
+                    Seit mehr als 25 Jahren professionell als Gestalter tätig //
+                    erfahren in Markenkommunikation und Design für asiatische
+                    Märkte, speziell China // Visuelle Kommunikation // Print,
+                    Online und interaktive Medien // Brand Identity // Interiors
+                    + Exteriors // Trans-Cultural Design // Konzept + Strategie
+                    // Creative Direction // Lehre + Forschung // Workshops +
+                    Vorträge
+                </p>
+                <p>
+                    Portfolio auf Anfrage
+                    <a href="mailto:studio@hyttrek.com">studio@hyttrek.com</a>
+                </p>
+            </article>
+
+            <article id="communication-design">
+                <header class="article-header">
+                    <h2>Kommunikationsdesign</h2>
+                </header>
+                <h3>
+                    Visuelle Kommunikation. Medienübergreifend, und immer im
+                    Kontext.
+                </h3>
+                <section>
+                    <p>
+                        Grafikdesign // Markenauftritte und Corporate Design //
+                        Online // Interface // kreative Lösungen im Kontext
+                        Ihrer Marke und Ihrer Produkte
+                    </p>
+                </section>
+            </article>
+
+            <article id="graphic-design">
+                <header class="article-header">
+                    <h2>Grafikdesign</h2>
+                </header>
+
+                <h3>Gestaltung, meist minimal, immer zeitlos.</h3>
+                <section>
+                    <p>
+                        Broschüren, Plakate, Flyer// Visitenkarten,
+                        Firmenauftritt, Geschäftsausstattung // Konzeption und
+                        Umsetzung // zielgruppenorientiert
+                    </p>
+                </section>
+            </article>
+
+            <article id="identity-design">
+                <header class="article-header">
+                    <h2>Identity Design</h2>
+                </header>
+
+                <h3>
+                    Markenauftritte und Corporate Identity. Vom einfachen Logo
+                    bis hin zu komplexen Systemen.
+                </h3>
+                <section>
+                    <p>
+                        Minimales, funktionales Design // zeitlos und dennoch
+                        zeitgemäß // medien- und formatübergreifende Konzepte //
+                        Branding durch Storytelling // internationale Referenzen
+                    </p>
+                </section>
+            </article>
+
+            <article id="interface-design">
+                <header class="article-header">
+                    <h2>Interface</h2>
+                </header>
+
+                <h3>Von HCI und User-Centered-Design zu UI/UX.</h3>
+                <section>
+                    <p>
+                        Interaktionskonzepte // kontextuale Design Systeme //
+                        Piktogramme und Icons // grafische Umsetzung // 2D und
+                        3D // Best Practices aus Experience Design, Design
+                        Thinking und UI/UX // mehr als 25 Jahre Erfahrung in
+                        diesem Bereich
+                    </p>
+                </section>
+            </article>
+
+            <article id="online-design">
+                <header class="article-header">
+                    <h2>Online</h2>
+                </header>
+                <h3>Website oder App?</h3>
+                <section>
+                    <p>
+                        Responsive Web Design // Digitale Kommunikationskonzepte
+                        // Social Media // Umsetzung komplexer Systeme in
+                        Zusammenarbeit mit erfahrenen Entwicklern
+                    </p>
+                </section>
+            </article>
+
+            <article id="space-design">
+                <header class="article-header">
+                    <h2>Space Design</h2>
+                </header>
+                <h3>Kreative Raumkonzepte</h3>
+                <section>
+                    <p>
+                        Interiors, Exteriors, Landscape // Retail, F&B, Office
+                        // kreativ und funktional // Visual Storytelling und
+                        Visualisierung als Service für Architekturbüros // Bei
+                        eigenen Projekten Umsetzung in Zusammenarbeit mit
+                        erfahrenen Landschaftsarchitekten, Innenarchitekten und
+                        Möbeldesignern
+                    </p>
+                </section>
+            </article>
+
+            <article id="teaching">
+                <header class="article-header">
+                    <h2>Lehre und Forschung</h2>
+                </header>
+                <h3>Lernen und Lehren …</h3>
+                <section>
+                    <p>
+                        Mehr als 20 Jahre Erfahrung in der Designlehre an
+                        international renommierten Hochschulen und privaten
+                        Instituten // Schwerpunkte: Grundlagen, Methodik,
+                        Identity Design, Experience Design, Design Thinking //
+                        Forschung im Bereich des Zusammenspiels von Sprache und
+                        Design // erfahren in Management und Entwicklung von
+                        Lehrinhalten // Konzeption und Durchführung von
+                        Lehrgängen und Workshops (Deutsch und/oder Englisch)
+                    </p>
+                </section>
+            </article>
+
+            <article id="contact">
+                <header class="article-header">
+                    <h2>Kontakt</h2>
+                </header>
+                <h3>Enno Hyttrek . Designer . Dozent</h3>
+                <section>
+                    <p>
+                        Milastraße 3 10437 Berlin Germany
+                    </p>
+
+                    <p>
+                        Mobil +49 (0) 178 914 1326 <br />
+                        eMail studio@hyttrek.com
+                    </p>
+
+                    <p>
+                        Umsatzsteuer-Identifikationsnummer <br />nach §27a
+                        Umsatzsteuergesetz: <br />DE311354421
+                    </p>
+
+                    <p>
+                        <a href="#">Datenschutzerklärung</a>
+                    </p>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <p>
+                &copy; Enno Hyttrek
+            </p>
+        </footer>
+    </body>
+</html>

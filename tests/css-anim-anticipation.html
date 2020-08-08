@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exploring JS ClassName</title>
+
+    <style>
+        :root {
+            --mod-01: calc((100vw/8)*1);
+            --mod-02: calc((100vw/8)*2);
+            --mod-03: calc((100vw/8)*3);
+            --mod-04: calc((100vw/8)*5);
+            --mod-05: calc((100vw/8)*6);
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            position: relative;
+            height: 100vh;
+        }
+
+        figure {
+            background-color: #000;
+
+        }
+
+        #sec01 figure {
+            width: var(--mod-01);
+            height: var(--mod-01);
+ 
+        }
+
+        .button {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgb(230, 30, 0);
+            height: 34px;
+            width: 100%;
+        }
+
+        .button:hover {
+            cursor: pointer;
+            background-color: rgb(250, 30, 0);
+        }
+
+        
+    </style>
+
+    <script>
+        function sec01() {
+            var x = document.getElementById('sec01');
+            if (x.className === 'sec01-a') {
+                x.className = 'sec01-b';
+            } else {
+                x.className = 'sec01-a';
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <section id="sec01" class="sec01-a">
+
+        <div class="button" onclick="sec01()"></div>
+
+        <figure>
+
+        </figure>
+
+    </section>
+
+</body></html>

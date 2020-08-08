@@ -1,0 +1,244 @@
+/*---------------------
+Stylesheet for enno.hyttrek.com
+Static site
+Contact: studio@hyttrek.com
+© 2020 Enno Hyttrek
+---------------------*/
+
+/*---------------------
+RESET
+---------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+nav#main-nav {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*---------------------
+LAYOUT
+---------------------*/
+
+h1,
+h2,
+h3,
+p {
+    padding: 1em 20px;
+}
+
+header {
+    position: relative;
+    height: 50vh;
+}
+
+article {
+    padding-bottom: 5em;
+}
+
+.main-header h1 {
+    padding-top: 20vh;
+}
+
+.main-header h1 span {
+    display: block;
+}
+
+.main-header h1 span:nth-child(even) {
+    display: none;
+}
+
+.main-header h1 span:nth-child(3),
+.main-header h1 span:nth-child(5) {
+    font-weight: 300;
+}
+
+header h1,
+header h2 {
+    position: absolute;
+}
+
+header h2 {
+    padding-top: 40vh
+}
+
+/*---------------------
+NAVIGATION
+---------------------*/
+
+nav {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+/**-----
+NAV Burger Icon
+-----**/
+
+#burger-icon {
+    height: 50px;
+}
+
+#burger-icon div {
+    width: 30px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 5px 0 0 0;
+}
+
+#burger-icon:hover div {
+    background-color: #fff;
+}
+
+#burger-icon:hover {
+    cursor: pointer;
+}
+
+/**-----
+NAV Mobile Nav
+-----**/
+
+nav#mobile-nav {
+    overflow: hidden;
+    height: 50px;
+}
+
+nav#mobile-nav li,
+#burger-icon {
+    padding: 5px 20px;
+    background-color: rgba(18, 34, 25, 0.6);
+}
+
+nav#mobile-nav li {
+    margin-top: 1px;
+}
+
+nav#mobile-nav li a {
+    color: #fff;
+    font-size: 8vw;
+}
+
+/*---------------------
+COLOR & STYLE
+---------------------*/
+
+body {
+    background-color: rgb(18, 34, 25);
+}
+
+main {
+    background-color: rgb(218, 234, 225);
+}
+
+header {
+    color: #fff;
+    /*    background-color: rgb(118,134,125);   */
+    background-color: red;
+    background-size: cover;
+    background-position: center;
+}
+
+header::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50vh;
+    background-image: url(img/3px-lines-black-03.png);
+    background-color: rgba(18, 34, 25,0.3);
+    opacity: 0.5;
+}
+
+.main-header {
+    background-image: url(img/small/QAB-KitchenClass-DSC_1642.jpg);
+}
+
+
+
+footer {
+    color: rgb(218, 234, 225);
+}
+
+/**-----
+STYLE Article Headers
+-----**/
+
+#communication-design .article-header {
+    background-image: url(img/small/DSC_6411-communicationDesign.jpg);
+}
+
+#graphic-design .article-header {
+    background-image: url(img/mid/Bovis-brochure.jpg);
+    background-size: 150%;
+}
+
+#identity-design .article-header {
+    background-image: url(img/mid/ehy-logos-A.jpg);
+    background-position: left;
+}
+
+/*---------------------
+TYPOGRAPHY
+---------------------*/
+
+@font-face {
+    font-family: "My Clear Sans";
+    font-style: normal;
+    font-weight: 100;
+    src: url("../fonts/woff2-convert/ClearSans-Thin.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "My Clear Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/woff2-convert/ClearSans-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "My Clear Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/woff2-convert/ClearSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "My Clear Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/woff2-convert/ClearSans-Italic.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "My Clear Sans";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/woff2-convert/ClearSans-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "My Clear Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/woff2-convert/ClearSans-Bold.woff2") format("woff2");
+}
+
+body {
+    font-family: "My Clear Sans";
+    font-weight: 100;
+}
